@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/about_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/logo" android:layout_width="80.0dip" android:layout_height="fill_parent" android:src="@drawable/icon" android:contentDescription="@string/info" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="29.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name_full" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/about_text" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/about_copyright" android:layout_weight="0.12" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/authors" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vlc_authors" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:autoLink="web" android:id="@id/main_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/about_link" android:layout_weight="0.27" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/main_revision" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/revision" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/compiled_by" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/main_compiled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+    </LinearLayout>
+</ScrollView>

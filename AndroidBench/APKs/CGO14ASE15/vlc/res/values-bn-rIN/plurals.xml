@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d ফলাফলগলি খুঁজে পেয়েছিল</item>
+        <item quantity="one">%d ফলাফল খুঁজে পেয়েছিল</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d গান</item>
+        <item quantity="one">1 গান</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d ফটোগ্রাফ</item>
+        <item quantity="one">1 ফটোগ্রাফ</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d সাব ফোল্ডার</item>
+        <item quantity="one">1 সাব ফোল্ডার</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">%1$d চ্যানেল</item>
+        <item quantity="one">1 চ্যানেল</item>
+    </plurals>
+</resources>

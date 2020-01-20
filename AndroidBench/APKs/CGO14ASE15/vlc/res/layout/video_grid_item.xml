@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_item" android:layout_width="160.0dip" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dropshadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ml_item_thumbnail" android:layout_width="160.0dip" android:layout_height="100.0dip" android:scaleType="fitCenter" />
+        <ProgressBar android:id="@id/ml_item_progress" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="1.0dip" android:indeterminate="false" android:progressDrawable="@drawable/gridview_progressbar" android:minHeight="1.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/list_title" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/ml_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/list_subtitle" android:gravity="center_horizontal" android:id="@id/ml_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ml_item_more" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dropdown_ic_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

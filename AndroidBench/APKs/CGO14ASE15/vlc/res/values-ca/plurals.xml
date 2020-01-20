@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">"s'ha trobat %d resultats"</item>
+        <item quantity="one">"s'ha trobat %d resultat"</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d cançons</item>
+        <item quantity="one">1 cançó</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d àlbums</item>
+        <item quantity="one">1 àlbum</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d subcarpetes</item>
+        <item quantity="one">1 subcarpeta</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d fitxers multimèdia</item>
+        <item quantity="one">1 fitxer multimèdia</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d canals
+"</item>
+        <item quantity="one">"1 canal
+"</item>
+    </plurals>
+</resources>

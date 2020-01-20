@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">נמצאו %d תוצאות</item>
+        <item quantity="one">נמצאה תוצאה אחת</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d שירים</item>
+        <item quantity="one">שיר אחד</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d אלבומים</item>
+        <item quantity="one">אלבום אחד</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d תת־תיקיות</item>
+        <item quantity="one">תת־תיקייה אחת</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d קובצי מדיה</item>
+        <item quantity="one">קובץ מדיה אחד</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d ערוצים
+"</item>
+        <item quantity="one">"ערוץ אחד
+"</item>
+    </plurals>
+</resources>

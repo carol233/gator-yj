@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Leiti %d vastet</item>
+        <item quantity="one">Leiti %d vaste</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d lugu</item>
+        <item quantity="one">1 lugu</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d albumit</item>
+        <item quantity="one">1 album</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d alamkataloogi</item>
+        <item quantity="one">1 alamkataloog</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d meediafaili</item>
+        <item quantity="one">1 meediafail</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d kanalit
+"</item>
+        <item quantity="one">"1 kanal
+"</item>
+    </plurals>
+</resources>

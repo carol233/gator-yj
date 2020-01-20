@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
+    <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</color>
+    <color name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</color>
+    <color name="abs__holo_blue_light">#ff33b5e5</color>
+    <color name="item_common">#ff111111</color>
+    <color name="item_1">#ff222222</color>
+    <color name="item_2">#ff000000</color>
+    <color name="orange">#fff48b00</color>
+    <color name="darkorange">#ff824600</color>
+    <color name="transparent_gray">#aa000000</color>
+</resources>

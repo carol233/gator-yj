@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: apv.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '3'
+  targetSdkVersion: '17'
+sharedLibrary: false
+sparseResources: true
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1
+versionInfo:
+  versionCode: '40000'
+  versionName: 0.4.0

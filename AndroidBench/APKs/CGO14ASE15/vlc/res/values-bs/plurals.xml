@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d rezultati pronađeni</item>
+        <item quantity="one">%d rezultat pronađen</item>
+        <item quantity="few">%d rezultata pronađeno</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d pjesme</item>
+        <item quantity="one">1 pjesma</item>
+        <item quantity="few">%d pjesama</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d albumi</item>
+        <item quantity="one">1 album</item>
+        <item quantity="few">%d albuma</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d podmape</item>
+        <item quantity="one">1 podmapa</item>
+        <item quantity="few">%d podmapa</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d medijske datoteke</item>
+        <item quantity="one">1 medijska datoteka</item>
+        <item quantity="few">%d medijskih datoteka</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">%1$d kanali</item>
+        <item quantity="one">1 kanal</item>
+        <item quantity="few">%1$d kanala</item>
+    </plurals>
+</resources>

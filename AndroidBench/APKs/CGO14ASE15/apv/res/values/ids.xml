@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="webview_about" />
+    <item type="id" name="button_close" />
+    <item type="id" name="path" />
+    <item type="id" name="files" />
+    <item type="id" name="upfolder" />
+    <item type="id" name="folder" />
+    <item type="id" name="home" />
+    <item type="id" name="recent1" />
+    <item type="id" name="recent2" />
+    <item type="id" name="recent3" />
+    <item type="id" name="recent4" />
+    <item type="id" name="recent5" />
+    <item type="id" name="text" />
+</resources>

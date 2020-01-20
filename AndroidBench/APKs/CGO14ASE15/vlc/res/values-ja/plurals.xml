@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d 件見つかりました</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d 曲</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d アルバム</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d サブフォルダー</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d メディアファイル</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d チャンネル
+"</item>
+    </plurals>
+</resources>

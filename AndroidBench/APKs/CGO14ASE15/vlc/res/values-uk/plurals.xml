@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">знайдено %d результатів</item>
+        <item quantity="one">знайдено %d результат</item>
+        <item quantity="few">знайдено %d результати</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d пісень</item>
+        <item quantity="one">%d пісня</item>
+        <item quantity="few">%d пісні</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d альбомів</item>
+        <item quantity="one">%d альбом</item>
+        <item quantity="few">%d альбоми</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d підтек</item>
+        <item quantity="one">%d підтека</item>
+        <item quantity="few">%d підтеки</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d медіа файлів</item>
+        <item quantity="one">%d медіа файл</item>
+        <item quantity="few">%d медіа файли</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d каналів
+"</item>
+        <item quantity="one">"%1$d канал
+"</item>
+        <item quantity="few">"%1$d канали
+"</item>
+    </plurals>
+</resources>

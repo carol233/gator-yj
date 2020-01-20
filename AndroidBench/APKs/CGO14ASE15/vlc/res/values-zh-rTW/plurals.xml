@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">找到 %d 個結果</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d 首歌曲</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d 專輯</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d 子目錄</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d 個媒體檔案</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d 頻道
+"</item>
+    </plurals>
+</resources>

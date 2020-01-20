@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Nájdených %d výsledkov</item>
+        <item quantity="one">Nájdený 1 výsledok</item>
+        <item quantity="few">Nájdené %d výsledky</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d skladieb</item>
+        <item quantity="one">1 skladba</item>
+        <item quantity="few">%d skladby</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d albumov</item>
+        <item quantity="one">1 album</item>
+        <item quantity="few">%d albumy</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d podpriečinkov</item>
+        <item quantity="one">1 podpriečinok</item>
+        <item quantity="few">%d podpriečinky</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d súborov s médiami</item>
+        <item quantity="one">1 súbor s médiom</item>
+        <item quantity="few">%d súbory s médiami</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d kanálov
+"</item>
+        <item quantity="one">"1 kanál
+"</item>
+        <item quantity="few">"%1$d kanály
+"</item>
+    </plurals>
+</resources>

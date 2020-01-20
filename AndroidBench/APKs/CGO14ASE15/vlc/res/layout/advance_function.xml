@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adv_func" android:padding="5.0dip" android:layout_width="450.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="7.0">
+        <TextView android:textSize="22.0sp" android:gravity="center|left" android:id="@id/adv_func_speed_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/playback_speed" android:layout_weight="3.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/adv_func_speed_info" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/speed_placeholder" android:layout_weight="2.0" />
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageButton android:id="@id/adv_func_speed" android:background="@drawable/ic_forward" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="7.0">
+        <TextView android:textSize="22.0sp" android:gravity="center|left" android:id="@id/adv_func_sleep_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sleep_title" android:layout_weight="3.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/orange" android:gravity="center" android:id="@id/adv_func_sleep_info" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="test" android:layout_weight="2.0" />
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageButton android:id="@id/adv_func_sleep_cancel" android:background="@drawable/sleep_cancel" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" />
+            <ImageButton android:id="@id/adv_func_sleep" android:background="@drawable/sleep" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="songs_quantity">
+        <item quantity="other">Kantak</item>
+        <item quantity="one">Kanta</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">Albumak</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d azpikarpeta</item>
+        <item quantity="one">Azpikarpeta bat</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d kanal
+"</item>
+        <item quantity="one">"Kanal %1$d
+"</item>
+    </plurals>
+</resources>

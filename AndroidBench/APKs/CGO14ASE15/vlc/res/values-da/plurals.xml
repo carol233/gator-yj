@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Fandt %d forekomster</item>
+        <item quantity="one">Fandt %d forekomst</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d sange</item>
+        <item quantity="one">1 sang</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d album</item>
+        <item quantity="one">1 album</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d undermapper</item>
+        <item quantity="one">1 undermappe</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d mediefiler</item>
+        <item quantity="one">1 mediefil</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d kanaler
+"</item>
+        <item quantity="one">"1 kanal
+"</item>
+    </plurals>
+</resources>

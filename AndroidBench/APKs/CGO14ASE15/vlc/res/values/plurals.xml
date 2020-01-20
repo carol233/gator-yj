@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d results found</item>
+        <item quantity="one">%d result found</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d songs</item>
+        <item quantity="one">1 song</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">1 album</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d subfolders</item>
+        <item quantity="one">1 subfolder</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d media files</item>
+        <item quantity="one">1 media file</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d channels
+"</item>
+        <item quantity="one">"1 channel
+"</item>
+    </plurals>
+</resources>

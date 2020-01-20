@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_item1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/header" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/header_logo" android:scaleType="centerInside" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/play" android:background="@drawable/ic_play" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="10.0dip" android:onClick="onPlayClick" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="bottom|center|right" android:id="@id/length" android:background="@drawable/video_list_length_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </FrameLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:fastScrollEnabled="true" />
+</LinearLayout>

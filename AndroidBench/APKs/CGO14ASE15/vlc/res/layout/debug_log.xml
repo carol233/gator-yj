@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/start_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_logging" android:layout_weight="0.5" />
+        <Button android:id="@id/stop_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_logging" android:layout_weight="0.5" />
+    </LinearLayout>
+    <Button android:id="@id/clear_log" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clear_log" />
+    <Button android:enabled="false" android:id="@id/copy_to_clipboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/copy_to_clipboard" />
+    <TextView android:id="@id/textview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textIsSelectable="true" />
+</LinearLayout>

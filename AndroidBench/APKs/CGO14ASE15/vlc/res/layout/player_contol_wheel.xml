@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeekBar android:id="@id/player_overlay_wheelbar" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="5.0dip" android:progressDrawable="@drawable/wheel_background" android:minHeight="5.0dip" android:thumb="@drawable/wheel_pause" android:thumbOffset="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d ଫଳାଫଳ ମିଳିଲା</item>
+        <item quantity="one">%d ଫଳାଫଳ ମିଳିଲା</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d ଗୀତଗୁଡିକ</item>
+        <item quantity="one">୧ ଗୀତ</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d ଆଲବମ୍ ଗୁଡିକ</item>
+        <item quantity="one">୧ ଆଲବମ୍</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d ଉପଫୋଲ୍ଡରଗୁଡିକ</item>
+        <item quantity="one">୧ ଉପଫୋଲ୍ଡର</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d ମିଡିଆ ଫାଇଲଗୁଡିକ</item>
+        <item quantity="one">୧ ମିଡିଆ ଫାଇଲ</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d ଚ୍ୟାନେଲ୍‌ସମୂହ
+"</item>
+        <item quantity="one">"୧ ଚ୍ୟାନେଲ୍‌
+"</item>
+    </plurals>
+</resources>

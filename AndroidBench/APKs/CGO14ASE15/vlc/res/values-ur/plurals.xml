@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d نتائج ملے ہيں</item>
+        <item quantity="one">%d نتيجہ ملاہے</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d نغمے</item>
+        <item quantity="one">1 نغمہ</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d البمز</item>
+        <item quantity="one">1 البم</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d ذیلی فولڈرز</item>
+        <item quantity="one">1 ذیلی فولڈر</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d ميڈيا فائيليں</item>
+        <item quantity="one">1 ميڈيا فائيل</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d چينل⏎
+"</item>
+        <item quantity="one">"1 چينل⏎
+"</item>
+    </plurals>
+</resources>

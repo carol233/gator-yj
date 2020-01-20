@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@id/top_lvl_layout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mainFrame" android:paddingLeft="6.0dip" android:paddingTop="10.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/inCallPanel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/slideUp" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/slideUpHint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/arrow_up_float" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/slideDown" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/arrow_down_float" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/slideDownHint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/stats" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/codec" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <SlidingDrawer android:id="@id/dialer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bottomOffset="7.0px" android:topOffset="5.0px" android:allowSingleTap="false" android:handle="@id/dialer_tab" android:content="@id/dtmf_dialer">
+        <ImageButton android:id="@id/dialer_tab" android:background="@drawable/tray_handle_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_dialpad_tray" />
+        <include android:id="@id/dtmf_dialer" layout="@layout/dtmf_twelve_key_dialer" />
+    </SlidingDrawer>
+</AbsoluteLayout>

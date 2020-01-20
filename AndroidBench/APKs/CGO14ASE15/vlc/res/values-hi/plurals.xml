@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d परिणाम मिल गया</item>
+        <item quantity="one">%d परिणाम मिल गया</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d गाने</item>
+        <item quantity="one">1 गाना</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d एल्बम</item>
+        <item quantity="one">1 एल्बम</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d सबफ़ोल्डर</item>
+        <item quantity="one">1 सबफ़ोल्डर</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d मीडिया दस्तावेजे</item>
+        <item quantity="one">1 मीडिया दस्तावेज</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d चैनलों
+"</item>
+        <item quantity="one">"1 चैनल
+"</item>
+    </plurals>
+</resources>

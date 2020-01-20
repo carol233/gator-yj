@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo" android:layout_width="130.0dip" android:layout_height="154.0dip" android:src="@drawable/cone" android:scaleType="centerInside" android:contentDescription="@string/info" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffff0000" android:layout_gravity="center_horizontal" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_not_compatible" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffff0000" android:layout_gravity="center_horizontal" android:id="@id/errormsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/error_message_is" />
+    </LinearLayout>
+</ScrollView>

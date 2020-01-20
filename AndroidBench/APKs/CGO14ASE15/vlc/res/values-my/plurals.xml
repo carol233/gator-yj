@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d ရလဒ်များတွေ့</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d သီချင်းများ</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d အယ်လ်ဘမ်များ</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d ဖိုင်တွဲခွဲများ</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d မီဒီယာဖိုင်များ</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d လှိုင်းများ
+
+"</item>
+    </plurals>
+</resources>

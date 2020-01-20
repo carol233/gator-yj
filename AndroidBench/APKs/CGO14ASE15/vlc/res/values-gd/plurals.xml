@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Chaidh %d toradh a lorg</item>
+        <item quantity="one">Chaidh %d toradh a lorg</item>
+        <item quantity="two">Chaidh %d thoradh a lorg</item>
+        <item quantity="few">Lorg sinn %d toraidhean</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d òran</item>
+        <item quantity="one">1 òran</item>
+        <item quantity="two">%d òran</item>
+        <item quantity="few">%d òrain</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d albam</item>
+        <item quantity="one">1 albam</item>
+        <item quantity="two">%d albam</item>
+        <item quantity="few">%d albaman</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">fo-phasgan</item>
+        <item quantity="one">fho-phasgan</item>
+        <item quantity="two">fho-phasgan</item>
+        <item quantity="few">%d fo-phasgain</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">faidhle meadhain</item>
+        <item quantity="one">fhaidhle meadhain</item>
+        <item quantity="two">fhaidhle meadhain</item>
+        <item quantity="few">%d faidhlichean meadhain</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1d seanail
+"</item>
+        <item quantity="one">"1 seanail
+"</item>
+        <item quantity="two">"%1d sheanail
+"</item>
+        <item quantity="few">"%d seanailean
+"</item>
+    </plurals>
+</resources>

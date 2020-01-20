@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_search" android:id="@id/ml_menu_search" android:title="@string/searchable_hint" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_goto" android:id="@id/ml_menu_open_mrl" android:title="@string/open_mrl" android:showAsAction="ifRoom" />
+    <item android:icon="@android:drawable/ic_menu_sort_alphabetically" android:id="@id/ml_menu_sortby" android:title="@string/sortby">
+        <menu>
+            <item android:id="@id/ml_menu_sortby_name" android:title="@string/sortby_name" />
+            <item android:id="@id/ml_menu_sortby_length" android:title="@string/sortby_length" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_menu_revert" android:id="@id/ml_menu_last_playlist" android:title="@string/last_playlist" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_refresh" android:id="@id/ml_menu_refresh" android:title="@string/refresh" android:showAsAction="ifRoom" />
+    <item android:icon="@android:drawable/ic_menu_preferences" android:id="@id/ml_menu_preferences" android:title="@string/preferences" />
+    <item android:icon="@android:drawable/ic_menu_info_details" android:id="@id/ml_menu_about" android:title="@string/about" />
+</menu>

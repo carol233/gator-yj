@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d 결과 발견됨</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d 노래</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d 앨범</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d 하위폴더</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d 미디어 파일</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d 채널
+"</item>
+    </plurals>
+</resources>

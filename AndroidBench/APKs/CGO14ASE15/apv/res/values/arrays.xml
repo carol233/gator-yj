@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zoom_animations">
+        <item>100</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="zoom_animation_labels">
+        <item>disabled</item>
+        <item>disappear</item>
+        <item>almost disappear</item>
+        <item>fade</item>
+    </string-array>
+    <string-array name="page_animations">
+        <item>100</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="page_animation_labels">
+        <item>disabled</item>
+        <item>disappear</item>
+        <item>almost disappear</item>
+        <item>fade</item>
+        <item>show always</item>
+    </string-array>
+    <string-array name="fade_speeds">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="fade_speed_labels">
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+        <item>6 seconds</item>
+        <item>7 seconds</item>
+    </string-array>
+    <string-array name="orientation_labels">
+        <item>automatic</item>
+        <item>harder to change</item>
+        <item>lock to portrait</item>
+        <item>lock to landscape</item>
+    </string-array>
+    <string-array name="orientations">
+        <item>0</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="color_mode_labels">
+        <item>Normal color</item>
+        <item>Inverted color</item>
+        <item>Normal black and white</item>
+        <item>Inverted black and white</item>
+        <item>Black on yellowish</item>
+        <item>Green on black</item>
+        <item>Red on black</item>
+    </string-array>
+    <string-array name="color_modes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="box_labels">
+        <item>ArtBox</item>
+        <item>BleedBox</item>
+        <item>CropBox</item>
+        <item>MediaBox</item>
+        <item>TrimBox</item>
+    </string-array>
+    <string-array name="boxes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="extra_caches">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="extra_cache_labels">
+        <item>none</item>
+        <item>1 MB</item>
+        <item>2 MB</item>
+        <item>4 MB</item>
+        <item>6 MB</item>
+        <item>8 MB</item>
+        <item>10 MB</item>
+    </string-array>
+    <string-array name="margins">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="margin_labels">
+        <item>none</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+    <string-array name="double_tap_actions">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="double_tap_action_labels">
+        <item>none</item>
+        <item>zoom in</item>
+        <item>zoom in or back out</item>
+    </string-array>
+    <string-array name="action_pairs">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>9</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="action_pair_labels">
+        <item>none</item>
+        <item>screen up/down</item>
+        <item>page up/down</item>
+        <item>page prev/next</item>
+        <item>zoom 1.02X</item>
+        <item>zoom 1.05X</item>
+        <item>zoom 1.1X</item>
+        <item>zoom 1.2X</item>
+        <item>zoom 1.414X</item>
+        <item>zoom 2X</item>
+        <item>screen up/down reversed</item>
+        <item>page up/down reversed</item>
+        <item>page prev/next reversed</item>
+    </string-array>
+</resources>

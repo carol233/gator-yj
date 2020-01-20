@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Результатов поиска: %d</item>
+        <item quantity="one">Результатов поиска: %d</item>
+        <item quantity="few">Результатов поиска: %d</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">Композиций: %d</item>
+        <item quantity="one">Композиций: 1</item>
+        <item quantity="few">Композиций: %d</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">Альбомов: %d</item>
+        <item quantity="one">Альбомов: 1</item>
+        <item quantity="few">Альбомов: %d</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">Подпапок: %d</item>
+        <item quantity="one">Подпапок: 1</item>
+        <item quantity="few">Подпапок: %d</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">Медиафайлов: %d</item>
+        <item quantity="one">Медиафайлов: 1</item>
+        <item quantity="few">Медиафайлов: %d</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"Каналов: %1$d
+"</item>
+        <item quantity="one">"Каналов: 1
+"</item>
+        <item quantity="few">"Каналов: %1$d
+"</item>
+    </plurals>
+</resources>

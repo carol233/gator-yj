@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_with_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/header" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/header_logo" android:scaleType="centerInside" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_gravity="center|left" android:id="@id/time" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_0" android:onClick="onTimeLabelClick" />
+        <SeekBar android:id="@id/timeline" android:paddingLeft="60.0dip" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:progressDrawable="@drawable/po_seekbar" android:minHeight="4.0dip" android:thumb="@drawable/ic_seekbar_thumb" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_gravity="center|right" android:id="@id/length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_0" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:id="@id/cover" android:background="#00ffffff" android:layout_width="140.0dip" android:layout_height="140.0dip" android:contentDescription="@string/cover_art" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:id="@id/title" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/title" android:singleLine="true" android:onClick="onTextClick" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff888888" android:ellipsize="marquee" android:gravity="center" android:id="@id/artist" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/artist" android:singleLine="true" android:onClick="onTextClick" />
+            <TextView android:textSize="18.0dip" android:textColor="#ff888888" android:ellipsize="marquee" android:gravity="center" android:id="@id/album" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/album" android:singleLine="true" android:onClick="onTextClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/shuffle" android:background="#00000000" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_shuffle" android:scaleType="fitXY" android:onClick="onShuffleClick" android:contentDescription="@string/shuffle" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/repeat" android:background="#00000000" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_repeat" android:scaleType="fitXY" android:onClick="onRepeatClick" android:contentDescription="@string/repeat" />
+            <ImageButton android:layout_gravity="center" android:id="@id/adv_function" android:background="#00000000" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/dots" android:scaleType="fitXY" android:onClick="showAdvanceFunction" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+        <ImageButton android:id="@id/previous" android:background="@android:color/transparent" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_backward" android:scaleType="fitXY" android:onClick="onPreviousClick" android:contentDescription="@string/previous" />
+        <ImageButton android:id="@id/play_pause" android:background="@android:color/transparent" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_pause" android:scaleType="fitXY" android:onClick="onPlayPauseClick" android:contentDescription="@string/pause" />
+        <ImageButton android:id="@id/stop" android:background="@android:color/transparent" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_stop" android:scaleType="fitXY" android:onClick="onStopClick" android:contentDescription="@string/stop" />
+        <ImageButton android:id="@id/next" android:background="@android:color/transparent" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_forward" android:scaleType="fitXY" android:onClick="onNextClick" android:contentDescription="@string/next" />
+    </LinearLayout>
+</LinearLayout>

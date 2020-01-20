@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_display_values">
+        <item>Sipdroid</item>
+        <item>Sipdroid, când e disponibil</item>
+        <item>Apelează</item>
+        <item>Always ask</item>
+    </string-array>
+    <string-array name="eargain_display_values">
+        <item>Scazut (fara ecou)</item>
+        <item>Mediu</item>
+        <item>Mare (poate produce ecou)</item>
+        <item>Cel mai mare</item>
+    </string-array>
+    <string-array name="eargain_values">
+        <item>0.1</item>
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="protocol_display_values">
+        <item>UDP (mai putin standby in 3G)</item>
+        <item>TCP (mai mult standby in 3G)</item>
+    </string-array>
+    <string-array name="protocol_values">
+        <item>udp</item>
+        <item>tcp</item>
+    </string-array>
+</resources>

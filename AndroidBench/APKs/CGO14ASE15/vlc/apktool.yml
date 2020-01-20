@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: vlc.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- assets/builddate.txt
+- assets/builder.txt
+- assets/env.txt
+- assets/revision.txt
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '17'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1
+versionInfo:
+  versionCode: '110'
+  versionName: 0.0.11

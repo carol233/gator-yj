@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/item_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:scrollbarStyle="outsideInset" android:gravity="center" android:id="@android:id/list" android:background="@drawable/background_pattern_dark_repeat" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="auto_fit" android:fastScrollEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:gravity="center" android:id="@id/textview_nomedia" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nomedia" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_flipper_loading" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_weight="1.0" />
+            <ViewFlipper android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:flipInterval="1000" android:layout_weight="1.0" android:autoStart="true">
+                <TextView android:textSize="20.0dip" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty" />
+                <TextView android:textSize="20.0dip" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/load_1_period" />
+                <TextView android:textSize="20.0dip" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/load_2_period" />
+                <TextView android:textSize="20.0dip" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/load_3_period" />
+            </ViewFlipper>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

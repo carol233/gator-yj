@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top" android:background="@color/dtmf_dialer_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginBottom="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/dtmf_display" />
+    </LinearLayout>
+    <include layout="@layout/dialpad" />
+</LinearLayout>

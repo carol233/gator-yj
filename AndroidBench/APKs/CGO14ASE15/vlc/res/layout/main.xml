@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_placeholder" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/info_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/info_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/progress" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textColor="#ffffffff" android:id="@id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.5" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/audio_mini_player" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

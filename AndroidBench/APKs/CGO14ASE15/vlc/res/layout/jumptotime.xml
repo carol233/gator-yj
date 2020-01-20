@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="center" android:id="@id/hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="2" android:inputType="number" />
+        <TextView android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/hour_label" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/colon" />
+        <EditText android:gravity="center" android:id="@id/minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="2" android:inputType="number" />
+        <TextView android:textSize="30.0sp" android:gravity="center" android:layout_gravity="center" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/colon" />
+        <EditText android:gravity="center" android:id="@id/second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="2" android:inputType="number" />
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="27.0sp" android:textStyle="bold" android:textColor="#ff06b52d" android:gravity="center" android:id="@id/plus" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="@string/plus" />
+            <Button android:textSize="27.0sp" android:textStyle="bold" android:textColor="#ffb80509" android:gravity="center" android:id="@id/minus" android:layout_width="40.0dip" android:layout_height="wrap_content" android:text="@string/minus" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="0.5" />
+        <Button android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

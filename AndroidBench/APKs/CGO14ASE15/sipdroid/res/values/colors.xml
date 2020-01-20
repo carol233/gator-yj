@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="incall_textConnected">#ff40cea3</color>
+    <color name="incall_textEnded">#ffff6072</color>
+    <color name="incall_textOnHold">#ffff9524</color>
+    <color name="dtmf_dialer_background">#ff333333</color>
+    <color name="recording_time_elapsed_text">#ffffffff</color>
+    <color name="recording_time_remaining_text">#ffff0033</color>
+</resources>

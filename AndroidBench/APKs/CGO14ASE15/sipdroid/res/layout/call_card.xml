@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mainCallCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="300.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="28.0sp" android:id="@id/upperTitle" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <include layout="@layout/call_card_person_info" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="10.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lowerTitleViewGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip">
+            <ImageView android:id="@id/lowerTitleIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:gravity="left" android:id="@id/lowerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <Chronometer android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/elapsedTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/otherCallOngoingInfoArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_incall_ongoing" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:gravity="left" android:id="@id/otherCallOngoingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/otherCallOngoingStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/ongoing" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/otherCallOnHoldInfoArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_incall_onhold" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:gravity="left" android:id="@id/otherCallOnHoldName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/otherCallOnHoldStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/onHold" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/menuButtonHint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,846 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/cmap/KSC-Johab-H
+SHA1-Digest: L0bfkmGcg5IzekOxZKJLau1jbn0=
+
+Name: assets/cmap/78-RKSJ-H
+SHA1-Digest: FJ5vRhPh3zIahJhe9m3M5U5riPU=
+
+Name: assets/cmap/GBKp-EUC-V
+SHA1-Digest: 9mWs0CxKhVlA+m0h9Hu9cAuiwqU=
+
+Name: res/anim/page_disappear.xml
+SHA1-Digest: yhveOvWcncsqdAHoSV753gMlpKk=
+
+Name: assets/cmap/UniHojo-UCS2-V
+SHA1-Digest: 2pD8Id61Vss41gYkLaKedPFZkDo=
+
+Name: assets/cmap/Adobe-Korea1-UCS2
+SHA1-Digest: aSvw99VOmFAbm9bMt179lCTuRfU=
+
+Name: assets/cmap/H
+SHA1-Digest: aYT1Zqy74gwff56jXbzbH9nkLZY=
+
+Name: assets/cmap/78-EUC-H
+SHA1-Digest: naIFcneSdNK2dSI4tk8occtF6NI=
+
+Name: assets/cmap/ETen-B5-H
+SHA1-Digest: R3yiYCsften/mkHhYhFvR9VuWhk=
+
+Name: assets/cmap/UniHojo-UCS2-H
+SHA1-Digest: Alk5MjRRW9eNT/eLxxpZeSWC/HA=
+
+Name: assets/cmap/GBKp-EUC-H
+SHA1-Digest: C8vTAjTjvn7JqvzBWBiE5Me4c1I=
+
+Name: res/drawable-hdpi/btn_zoom_up_selected.9.png
+SHA1-Digest: BuHpZErZFkNJdE5ekNBmio3ZsJk=
+
+Name: assets/cmap/KSC-Johab-V
+SHA1-Digest: w6zMY7XyM31zPTZpNmA1y2Bq6kQ=
+
+Name: assets/cmap/UniJISPro-UCS2-V
+SHA1-Digest: XOQnb185Mxfk3bVgGle2VirhWV4=
+
+Name: assets/cmap/78-RKSJ-V
+SHA1-Digest: FpkCRCPKVO9MzLT3sOYXaCESp7o=
+
+Name: assets/font/NimbusSanL-ReguItal.cff
+SHA1-Digest: GpHmp46IDdmMKld3RKSDOjfJBQ4=
+
+Name: assets/cmap/B5-H
+SHA1-Digest: 4+QY6o9ULMc9/8l6BKiCrCdHWR4=
+
+Name: assets/cmap/78-EUC-V
+SHA1-Digest: TDj7+XuYL4mjWZ9TBl2LPzUbY6Q=
+
+Name: assets/cmap/Adobe-GB1-5
+SHA1-Digest: e7ZCaTiT1RvtROlEwnPW8vjOu4U=
+
+Name: res/drawable/btn_zoom_down_disabled.9.png
+SHA1-Digest: ylyOgn/iafDtzJcd3hj54xFbaag=
+
+Name: assets/cmap/GB-V
+SHA1-Digest: 4/j+Bl4XCwltMSrBsSXkOcDk1oQ=
+
+Name: assets/cmap/Adobe-GB1-3
+SHA1-Digest: UI/ASYCCtwV2VjYBVvVM5j9Mn9M=
+
+Name: assets/cmap/Adobe-GB1-4
+SHA1-Digest: lnG5rHFcfAm08uFGhN7s1o9smDY=
+
+Name: assets/cmap/Adobe-GB1-1
+SHA1-Digest: 6abPFSaigJO2E5ihMj6unc+kyDw=
+
+Name: assets/cmap/Ext-RKSJ-V
+SHA1-Digest: /djziuDPABxA3RUZkdg+ZmTRDOg=
+
+Name: assets/cmap/Adobe-GB1-2
+SHA1-Digest: RC1OJbWJx3EbFlT8g4OdHW7HJkQ=
+
+Name: res/drawable/upfolder.png
+SHA1-Digest: 427OstgLb2hfWy9NrQFDoqnTWTA=
+
+Name: assets/cmap/Adobe-GB1-0
+SHA1-Digest: GV8jNeaj4IAOgNJiwGS0q1repCk=
+
+Name: assets/cmap/B5-V
+SHA1-Digest: XvVYfCQdsD/uOssm/ipmaosFpBg=
+
+Name: assets/cmap/Ext-RKSJ-H
+SHA1-Digest: or9u6khjpREZIWyTVeNWtsXwgwg=
+
+Name: res/drawable-hdpi/recent3.png
+SHA1-Digest: e10YhoqlfRQkJSk4TqTd+naKXGo=
+
+Name: assets/cmap/GBT-V
+SHA1-Digest: d6PtLBFsnFZmDQ0ZYK+EtSj2gjw=
+
+Name: res/drawable/green_btn_zoom_up.xml
+SHA1-Digest: YXVxrrrIhx6wes7Jm96K+zqXuLs=
+
+Name: assets/cmap/GB-H
+SHA1-Digest: h84GZvwXxxvJLwDUmQElhSny7Ug=
+
+Name: res/drawable-hdpi/btn_zoom_up_normal.9.png
+SHA1-Digest: aBqtZs+z+eNR8G5NZUbdOEjedkg=
+
+Name: assets/cmap/UniCNS-UTF16-V
+SHA1-Digest: zrxFC19o+0xk9b5qCpGiu/sqCzE=
+
+Name: assets/cmap/ETen-B5-V
+SHA1-Digest: GjYXg4gDoka/40tgs82BzPxqQaE=
+
+Name: res/drawable-hdpi/btn_zoom_down_normal.9.png
+SHA1-Digest: AuEoRgixMHbfajYnnA/Vw3ILWu4=
+
+Name: assets/cmap/V
+SHA1-Digest: PFavmVt7cpyIDTj6R/RgqoT5xtM=
+
+Name: assets/cmap/GBT-H
+SHA1-Digest: Grxa1Ujhg5b/KRRPo+tyql+0sGs=
+
+Name: res/drawable/red_red_btn_zoom_up_selected.9.png
+SHA1-Digest: AwOblDn5CWX0+9BpT1/6d2z1Br4=
+
+Name: assets/cmap/CNS1-V
+SHA1-Digest: GlO/Po+ZXSujRbe/s4ho+48I97s=
+
+Name: res/raw-pl/about.html
+SHA1-Digest: Z+CISRHNaioAyYxRRge0lk/sEZ8=
+
+Name: assets/cmap/Ext-V
+SHA1-Digest: SySD7pjkKulavcPYx92CgdQoxH0=
+
+Name: assets/cmap/UniGB-UCS2-H
+SHA1-Digest: LfXyJX1WG7XEp0HzN6uSUw0aUW4=
+
+Name: res/drawable/green_btn_zoom_up_disabled.9.png
+SHA1-Digest: 52Mg/C+q1a+QGLtltWpTlC1j70Q=
+
+Name: assets/cmap/CNS1-H
+SHA1-Digest: Sck6zLywn8j46qhhaG4BT3FNV6g=
+
+Name: assets/cmap/Add-H
+SHA1-Digest: dlicoz9Fp64QIB24Gf61brg0xas=
+
+Name: res/drawable-hdpi/folder.png
+SHA1-Digest: 0hCqqF/Bw/YEYPUXzHeHbuAdXeY=
+
+Name: assets/cmap/UniCNS-UCS2-V
+SHA1-Digest: D7uAJ0jeFhhXyQCc+Z/NlwPCVyM=
+
+Name: res/drawable/red_btn_zoom_width.xml
+SHA1-Digest: YfUQxrLL3ED29YYJMjnI0vcUPdM=
+
+Name: assets/cmap/ETenms-B5-H
+SHA1-Digest: grd+GXyCpUhUBTblCrVulap9/gI=
+
+Name: res/layout/filechooser.xml
+SHA1-Digest: SfM1rgJa/GVMmK7nTNzmIObP6N8=
+
+Name: res/drawable-hdpi/green_btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: VijVfYPfTpbNXFiPcL9SBNfSxoE=
+
+Name: assets/cmap/Add-V
+SHA1-Digest: DJNE0Ey9tZxYjQjSZ75VKnkyMJ8=
+
+Name: assets/font/StandardSymL.cff
+SHA1-Digest: 1y+q5i+JgVnzn6XRs0apDUiRhGA=
+
+Name: assets/cmap/Adobe-Japan1-UCS2
+SHA1-Digest: VxTMPJxpZsou7Pdxx/E8LLD6y0I=
+
+Name: assets/cmap/UniCNS-UCS2-H
+SHA1-Digest: JBOcLkc00wdqHKaaUIU00ok+uFw=
+
+Name: res/xml/options.xml
+SHA1-Digest: 41w2ScxNCUPmiEb1q/VTnAJR/aM=
+
+Name: res/drawable-hdpi/red_btn_zoom_up_normal.9.png
+SHA1-Digest: pdEN6iSh38Wka8wZwfgFILn7N6M=
+
+Name: res/drawable/home.png
+SHA1-Digest: cbM6T/sKo0HUGi8gQJ+wbdtt5YU=
+
+Name: assets/cmap/Ext-H
+SHA1-Digest: ZKBiHC3r9zdbMparNpDmcRGk88A=
+
+Name: assets/cmap/UniGB-UCS2-V
+SHA1-Digest: Mg3fyaCMxAbFafh1S5zHKaKQoBQ=
+
+Name: res/anim/zoom_disappear.xml
+SHA1-Digest: yhveOvWcncsqdAHoSV753gMlpKk=
+
+Name: res/drawable-hdpi/upfolder.png
+SHA1-Digest: 4jypGOSqTmLPdkPpJpeonZG1Gt8=
+
+Name: res/drawable/btn_zoom_up_normal.9.png
+SHA1-Digest: BAZQbrnOdiqo086ACOwRTLt+ZQM=
+
+Name: res/raw/about.html
+SHA1-Digest: ARssdBKcjtzEmLsRT21Gk6Ydd/o=
+
+Name: assets/cmap/UniKS-UTF16-V
+SHA1-Digest: vZNR96fhWToxoYcXzZxaBjDQzZ8=
+
+Name: assets/cmap/NWP-V
+SHA1-Digest: HnKuU2fo6T58wxBZtzLAqDksWGE=
+
+Name: assets/font/NimbusSanL-BoldItal.cff
+SHA1-Digest: vsrBQyFDVv2lSgRl5kROJFkh1Uc=
+
+Name: lib/armeabi-v7a/libapv.so
+SHA1-Digest: WJ2lYrzFD0ZTbnHG+AiyLTpm6kQ=
+
+Name: assets/cmap/GBTpc-EUC-H
+SHA1-Digest: HzA46yLH8nf4MN8tBmLUoMA95No=
+
+Name: res/drawable/btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: VVQpAG6UKkJ3EEpFA+DjTl1mWRI=
+
+Name: assets/cmap/UniGB-UTF16-H
+SHA1-Digest: 0RPKMtW8j2ZnTspNp6Jt9bv7uOs=
+
+Name: res/drawable/btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: OEUyrb2P9RaK69WyrWVusRyeMis=
+
+Name: assets/font/NimbusRomNo9L-Regu.cff
+SHA1-Digest: qa2yYHPj+cLrFnhzSXszTROgh78=
+
+Name: res/drawable/btn_zoom_down_selected.9.png
+SHA1-Digest: pghlUjlHhJyojgnLCBVCymnqpzE=
+
+Name: res/drawable/minus.png
+SHA1-Digest: vR9KDybP8plxKQbNNMazFtWd8SA=
+
+Name: assets/cmap/GBT-EUC-V
+SHA1-Digest: R+R7G8ptazwv0OPRnbxHdSNLnMM=
+
+Name: assets/cmap/GBT-EUC-H
+SHA1-Digest: pE1P3h6v9u1EvNDMaVUVm4liSgU=
+
+Name: res/drawable/btn_zoom_down_pressed.9.png
+SHA1-Digest: aTXVdtxteGjGcw0VG6f/UbkPsSA=
+
+Name: assets/cmap/GBTpc-EUC-V
+SHA1-Digest: IPAGLFuVuBONI0iuov+QYUtOcUQ=
+
+Name: assets/cmap/UniKS-UTF16-H
+SHA1-Digest: lqY3DJgQ6c1hPxsX5Y95l/6j6Wc=
+
+Name: assets/cmap/ETenms-B5-V
+SHA1-Digest: j90VRfwbpgODlg0/ltZFsPMlOGI=
+
+Name: assets/cmap/90msp-RKSJ-H
+SHA1-Digest: BMOZ/6KDgu38qrz0+Jp6U4Oo9iU=
+
+Name: assets/font/droid/DroidSans.ttf
+SHA1-Digest: YvKEH2HkvmagMDzRVn7S0wC04xw=
+
+Name: res/drawable/recent1.png
+SHA1-Digest: eTIOlQ7ga/4CLQSHlNv91Wjhl3k=
+
+Name: res/drawable/folder.png
+SHA1-Digest: DCWmbyygSEVVHwLHiUEt1ycIr80=
+
+Name: res/anim/page_almost_disappear.xml
+SHA1-Digest: EwnrJS9i++wLhHEvwp9ejVJC7tI=
+
+Name: res/drawable-hdpi/recent5.png
+SHA1-Digest: hWkGT2bqnBNO+7f6stCtczsaGWs=
+
+Name: assets/font/droid/NOTICE
+SHA1-Digest: mfGbB5d4O+jqoy1nVTsgqzQ6IIU=
+
+Name: assets/cmap/90msp-RKSJ-V
+SHA1-Digest: 4XJWCPFztno6C57lm4ciTUDeazI=
+
+Name: assets/cmap/UniGB-UTF16-V
+SHA1-Digest: NYiN6jUWINgYmIcYLjS9tx91XQw=
+
+Name: res/anim/zoom_almost_disappear.xml
+SHA1-Digest: GGe1p4Kidcxulz8NhK/a8+jo8y8=
+
+Name: assets/cmap/UniJIS-UCS2-HW-H
+SHA1-Digest: 5XvE6Ro9Kug5ISOq4fmj8RC+sqI=
+
+Name: res/drawable/green_btn_zoom_up_normal.9.png
+SHA1-Digest: d1K0gBNOq7b5cT+l4QflyRFRfLY=
+
+Name: assets/cmap/Hojo-V
+SHA1-Digest: EyblCnRR3ZZXn9DR8b/r3vqEXZI=
+
+Name: res/drawable/btn_zoom_width_normal.png
+SHA1-Digest: pLRK6iSVXFvCNxOQdi9OHMjoQc0=
+
+Name: res/drawable-hdpi/green_btn_zoom_down_disabled.9.png
+SHA1-Digest: UQ07CPEaRDGMjTpQefCQe2j/EMc=
+
+Name: assets/cmap/90ms-RKSJ-H
+SHA1-Digest: d1G0tbZtmxfg4aI9EBrrsLiCog8=
+
+Name: assets/cmap/CNS2-V
+SHA1-Digest: grGjpyqRB+zEPEseA0rojXjxC2s=
+
+Name: assets/cmap/UniJISPro-UCS2-HW-V
+SHA1-Digest: pfYM7OLl6sv2bNnzStMloSA8NFA=
+
+Name: assets/cmap/90ms-RKSJ-V
+SHA1-Digest: 93f9EJPZOhlRryEW2dgAlE/O2GA=
+
+Name: assets/cmap/UniCNS-UTF16-H
+SHA1-Digest: +kOsZXIhgS2njKkMLuvHybldtO4=
+
+Name: res/layout/onelinewithicon.xml
+SHA1-Digest: lqfnyxm9jhWl8+dgPpDotbXAMaY=
+
+Name: res/drawable/apvpro_icon.png
+SHA1-Digest: k75//HXQN6Vuen5khLrhLLvhcFE=
+
+Name: assets/cmap/Hojo-H
+SHA1-Digest: Tq73kyWPZ7r+ZHkCs4kq6vyr+WU=
+
+Name: assets/cmap/UniJIS-UCS2-HW-V
+SHA1-Digest: nOtXKxIisNvFyPpmJcj+Rr46x+c=
+
+Name: assets/cmap/CNS2-H
+SHA1-Digest: SaY86z6W1WC4LZiaPndhgEOFmQE=
+
+Name: assets/font/Dingbats.cff
+SHA1-Digest: EOWhsGMVjxtqKaN1gFilQ36ikdI=
+
+Name: res/layout/toc_list_item.xml
+SHA1-Digest: PFbi5/AqAILoNmLKDpmMJBt0yTM=
+
+Name: res/drawable-hdpi/red_btn_zoom_down_disabled.9.png
+SHA1-Digest: x7l3MlbNHxsd8kvZOm77QeQXI1I=
+
+Name: assets/cmap/90pv-RKSJ-V
+SHA1-Digest: OnQNGmmi99zTXHrSoO1WjZE1mf4=
+
+Name: res/drawable/btn_zoom_up_pressed.9.png
+SHA1-Digest: KKbp7CyjyXV6qRa4fbwM93N7SrA=
+
+Name: res/drawable-hdpi/btn_zoom_width_normal.png
+SHA1-Digest: mkeMvCmErtN9fq3DbOQpPQQGQxA=
+
+Name: res/drawable/red_btn_zoom_down_disabled.9.png
+SHA1-Digest: 1P9WcZ6egyleymnIUO1xnuq2M5k=
+
+Name: assets/cmap/Add-RKSJ-V
+SHA1-Digest: qlRyg/88IQlRyB1YqnXd5Dgai6g=
+
+Name: res/drawable-hdpi/green_btn_zoom_up_normal.9.png
+SHA1-Digest: 6tIN3UO3lwvwisX9rRbmctTl1RI=
+
+Name: assets/cmap/Add-RKSJ-H
+SHA1-Digest: zrsPr0jEJ3fnz7kD8buFkBgkQa4=
+
+Name: assets/cmap/90pv-RKSJ-H
+SHA1-Digest: +qmGeg4FN960RTLkeHgkcp94o2M=
+
+Name: res/drawable/red_btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: 7Y39JUOLXZ0zO255sG4erY7mTko=
+
+Name: res/drawable/green_btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: b1P9Db0DrRm+WJI/Lkex3C38cM4=
+
+Name: assets/cmap/README
+SHA1-Digest: N0ZcrRii9cgU3F15lWQ5TtOQdC8=
+
+Name: res/drawable/green_btn_zoom_width_normal.png
+SHA1-Digest: +f49KMxrNIbSs7wF7CiP9qFoU1U=
+
+Name: res/drawable-mdpi/upfolder.png
+SHA1-Digest: 9fdE7mH1BjMBmnP7dI0wKIb90+w=
+
+Name: res/drawable-mdpi/recent4.png
+SHA1-Digest: Zz/4nW1cNKTq9vj0l9AVmhguvRY=
+
+Name: assets/cmap/NWP-H
+SHA1-Digest: mdcbRRSFZCtDceNsxmquOiuWs7E=
+
+Name: assets/font/NimbusRomNo9L-ReguItal.cff
+SHA1-Digest: CHN3cuqwWVqk9EI2gDitJNndFGw=
+
+Name: res/drawable-hdpi/home.png
+SHA1-Digest: edF4tV/nklJB/peglU06Z1Iwc9Y=
+
+Name: res/drawable-hdpi/btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: elt88RE8FeqSUD97/OY7smAGnfs=
+
+Name: assets/cmap/Hankaku
+SHA1-Digest: /8fKwiWtkaDGaAmpa70TsPS+Bag=
+
+Name: assets/cmap/Adobe-CNS1-3
+SHA1-Digest: zuR8d7fE7HFxS/AnAS7uWui8pTM=
+
+Name: assets/cmap/Adobe-CNS1-2
+SHA1-Digest: fAo58BiT1hgsMkQqqfS4GSIUSgI=
+
+Name: assets/cmap/Adobe-CNS1-1
+SHA1-Digest: 6elyrdW8r91fKE/cj3zaOCHhGlo=
+
+Name: assets/cmap/Adobe-CNS1-0
+SHA1-Digest: pRilKTAHCytNLJT7iYl9nrYqF0g=
+
+Name: res/drawable-hdpi/green_btn_zoom_down_normal.9.png
+SHA1-Digest: 7ppwRl7n38kAQFCDtcPrabAAcbI=
+
+Name: assets/cmap/Adobe-CNS1-6
+SHA1-Digest: k5jETfaa9jcyDwSdZnsj9VwK9NY=
+
+Name: assets/cmap/Adobe-CNS1-5
+SHA1-Digest: WZTQdSmNykYPDolIbJVqczovl30=
+
+Name: res/drawable-hdpi/green_btn_zoom_up_disabled.9.png
+SHA1-Digest: 68GzgmdBGUm4TwOYyvQ2vwe0Qd4=
+
+Name: assets/cmap/Adobe-CNS1-4
+SHA1-Digest: sqs+OJS5/xLbn46cDTLbs5CrkGg=
+
+Name: res/drawable-hdpi/btn_zoom_width_pressed.png
+SHA1-Digest: WJkvmvyFHwqoeIvJ1nHLq7g0qlU=
+
+Name: res/drawable/red_btn_zoom_up_normal.9.png
+SHA1-Digest: 2hLbNHQTisidzc9CFsvcya5pn+4=
+
+Name: res/drawable/green_btn_zoom_down_normal.9.png
+SHA1-Digest: /UmXqUoPZeyEvohnoGBHA7sWoHk=
+
+Name: res/drawable/recent5.png
+SHA1-Digest: 5iCyn96ChFiLXgzLpylt6lMlwnY=
+
+Name: assets/font/NimbusMonL-Regu.cff
+SHA1-Digest: Hgjtp6trCJEG56ugRRDwsTMaW6E=
+
+Name: assets/cmap/Katakana
+SHA1-Digest: Nlxj8scgNEIQAxKSzu/0kvacneA=
+
+Name: assets/cmap/UniKS-UCS2-V
+SHA1-Digest: VxisyRc8Kvjv5xGJgfYqBhwQekw=
+
+Name: res/drawable/green_btn_zoom_down_disabled.9.png
+SHA1-Digest: AeSWB/P7hOt5MDqMHcUA5IUCzvQ=
+
+Name: res/drawable/green_btn_zoom_width.xml
+SHA1-Digest: /I4KBVRBr69DDTSURo5H1Uo2Zi8=
+
+Name: lib/x86/libapv.so
+SHA1-Digest: dj1RqhxCSxUITrFa8Pt+IVQ4BEc=
+
+Name: assets/cmap/GB-EUC-V
+SHA1-Digest: kZd2B7dpwjIBz/UbSFf3fJ8Jqm0=
+
+Name: assets/cmap/UniKS-UCS2-H
+SHA1-Digest: Tskql51la1sYRaoOzpZgb6bApxs=
+
+Name: res/drawable-hdpi/red_btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: EGomugbUqBI/d/HGQpQsgxrOMzU=
+
+Name: res/drawable-hdpi/btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: KiTHVj+y6uzdWwprV70OrgBsX1g=
+
+Name: res/drawable/btn_zoom_up_selected.9.png
+SHA1-Digest: iYTqeHy/1XpJStZcSda9kTZgFTw=
+
+Name: assets/font/NimbusMonL-Bold.cff
+SHA1-Digest: btkoSgI9q2wzOHd8hs3dU7rdR3Y=
+
+Name: assets/cmap/GB-EUC-H
+SHA1-Digest: kkXvsB2YmkgLBqKJoXWon4F7z10=
+
+Name: assets/font/droid/DroidSansMono.ttf
+SHA1-Digest: Ez+2zybqBztFb7VXuUzoxGFDsRc=
+
+Name: assets/cmap/UniJIS-UTF16-H
+SHA1-Digest: hHVQ8Wefrfehp/kvi4qVDG8+Hds=
+
+Name: resources.arsc
+SHA1-Digest: 4RR2T85dTsThjYEdaA5d+TrQLDk=
+
+Name: assets/cmap/UniHojo-UTF16-V
+SHA1-Digest: +ESW+wH42+ML1mDge9oQtNCSIAE=
+
+Name: res/drawable-hdpi/recent2.png
+SHA1-Digest: cWEvKmAmSQrYDncW188qx8aAv5E=
+
+Name: res/drawable-hdpi/btn_zoom_down_pressed.9.png
+SHA1-Digest: nITauPRwp4e5NNtIHkOPx4wsLlU=
+
+Name: assets/cmap/Adobe-CNS1-UCS2
+SHA1-Digest: +FAJGJItNMZGcrcpLMdfGjoaCTw=
+
+Name: res/drawable-hdpi/red_btn_zoom_up_disabled.9.png
+SHA1-Digest: NEldXcWFgyFG6d/Hy2mh9CPc8qU=
+
+Name: AndroidManifest.xml
+SHA1-Digest: j0KYgPoN2VsgpD/JhzqeEV1Gc6U=
+
+Name: assets/cmap/Roman
+SHA1-Digest: qa1d7MN28JbXbhDAyCh8x/Y5+3s=
+
+Name: assets/cmap/UniJIS-UTF16-V
+SHA1-Digest: 4ZIhGSS73qqaYFX8EXgn6R17z7w=
+
+Name: assets/cmap/UniHojo-UTF16-H
+SHA1-Digest: uXHqVmGPEYakyTd9rVPVCBZQYbI=
+
+Name: res/drawable/btn_zoom_down_normal.9.png
+SHA1-Digest: xrBZR89Jl/g0WcAru+15PVHAZw8=
+
+Name: res/drawable-hdpi/btn_zoom_up_pressed.9.png
+SHA1-Digest: In07NuxEP3vXAGLFv9tCcBUHB6o=
+
+Name: assets/cmap/HKm314-B5-H
+SHA1-Digest: uEYI0rTpZxTHLvASn3mbIpp865g=
+
+Name: assets/cmap/EUC-V
+SHA1-Digest: ylhXd8DXlHnvCUKN/xzkoSXNdp8=
+
+Name: assets/cmap/GBK-EUC-V
+SHA1-Digest: grDIMmmqlGuE+o9TSakxgJJSpO0=
+
+Name: assets/cmap/HKm471-B5-V
+SHA1-Digest: t5lHSsUkzALCxB58i+Xmvcup/pY=
+
+Name: res/anim/page.xml
+SHA1-Digest: 3d5uvsoJ3YLN5ioYZ8w1sVe+xrU=
+
+Name: res/drawable/btn_zoom_up_disabled.9.png
+SHA1-Digest: ktRfotNo/pP889Q0QX4aJVQV5RY=
+
+Name: assets/font/NimbusSanL-Bold.cff
+SHA1-Digest: 2wYvJM9A+FooNYNJotu8acs3/j0=
+
+Name: res/drawable/btn_zoom_up.xml
+SHA1-Digest: bJ91AjZ7XzF+BpwOb2qPuskW6Cg=
+
+Name: classes.dex
+SHA1-Digest: 9b/6oA1IcFPDfKKvY7Q567pjRTs=
+
+Name: res/drawable/btn_zoom_width_pressed.png
+SHA1-Digest: Fsc8c2LuXfVwf/oIkOca21XMDZE=
+
+Name: res/drawable-hdpi/btn_zoom_down_selected.9.png
+SHA1-Digest: ugpLBDo+5tl6GMmeAOgslSD2scU=
+
+Name: res/drawable-mdpi/recent2.png
+SHA1-Digest: pSFD7Xm4GKEFv1oXaMfvKcLwUdc=
+
+Name: res/drawable/recent2.png
+SHA1-Digest: Nd4owQo37q1W1z6kJUyty5Ykp/E=
+
+Name: res/drawable/pdfviewer.png
+SHA1-Digest: EqQTk37vPts2d+oN7FsGg/E+tuM=
+
+Name: assets/cmap/HKm471-B5-H
+SHA1-Digest: Y+gUT8j7qcvLtmsEzKXGNfZbqXc=
+
+Name: assets/cmap/EUC-H
+SHA1-Digest: LeQh22YUZacD4xSdKCo+5IIP3mE=
+
+Name: assets/cmap/HKm314-B5-V
+SHA1-Digest: E6hM7bvSccoBPAhs141jldr9UTM=
+
+Name: assets/cmap/GBK-EUC-H
+SHA1-Digest: yah/sd8HFzqZQJtyh8xjCLA2mks=
+
+Name: res/drawable-hdpi/red_btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: ZJpiPJkB3KsoLoi/241MW2fehvQ=
+
+Name: res/drawable/red_btn_zoom_down.xml
+SHA1-Digest: f+GH0tyw0i3q9zn3U6hkU4iA5GQ=
+
+Name: res/drawable-mdpi/home.png
+SHA1-Digest: 9CRq626KArwobfwcJJwF6UW3eN8=
+
+Name: res/drawable/btn_zoom_down.xml
+SHA1-Digest: uCEGHxPyHOcG1yxgPdzX6E0JDfI=
+
+Name: assets/cmap/CNS-EUC-V
+SHA1-Digest: IyoC836FdCW3LiE4yMUm7OOOgVI=
+
+Name: assets/cmap/RKSJ-V
+SHA1-Digest: b0UX5TGmkbymO/UBcmc2k8TYI3o=
+
+Name: res/drawable-mdpi/recent1.png
+SHA1-Digest: zQCX2ZV2962B3J0WOVwm2URXl3U=
+
+Name: assets/cmap/HKscs-B5-H
+SHA1-Digest: jkd0PFV5XMb3DpWOIrerIEN4vbs=
+
+Name: assets/cmap/ETHK-B5-H
+SHA1-Digest: sog4ryzHaXWp9isrvKU+0DtwBaM=
+
+Name: res/drawable/green_btn_zoom_down.xml
+SHA1-Digest: 04jrfbsK6H5VYoTgqLKDVbqiBQE=
+
+Name: assets/cmap/Adobe-Korea1-2
+SHA1-Digest: N29fjQDdNxrxlWxWH2954GSphbw=
+
+Name: assets/cmap/KSC-EUC-H
+SHA1-Digest: sQmvy9C8O7mMdjd+/R6CVVmFJ8s=
+
+Name: assets/font/NimbusRomNo9L-MediItal.cff
+SHA1-Digest: fM6anX40ujsr8F99EHfliJpXXMs=
+
+Name: assets/cmap/KSCms-UHC-V
+SHA1-Digest: JvYP0bfPMICSMpuvWxrdTgoYAa8=
+
+Name: res/drawable/red_btn_zoom_width_normal.png
+SHA1-Digest: wz3Y8clCrZSfmQDg3H+OfqAWjik=
+
+Name: assets/cmap/Adobe-Korea1-0
+SHA1-Digest: hjROr7ikKad4aCQKioN1GQOWlGo=
+
+Name: assets/cmap/Adobe-Korea1-1
+SHA1-Digest: xsFXddv10MxHXgkdZCJc329fbyM=
+
+Name: assets/cmap/HKscs-B5-V
+SHA1-Digest: Zw4IHAUGxPhQO95Y1iDMWfGmP+0=
+
+Name: assets/cmap/KSCms-UHC-HW-V
+SHA1-Digest: uv+XrDwZQPDeViWTbV2zfGUkq/I=
+
+Name: assets/font/NimbusMonL-BoldObli.cff
+SHA1-Digest: xCI87CHGwHGqv28TUfBbQS4iEh0=
+
+Name: assets/cmap/Hojo-EUC-H
+SHA1-Digest: P7H05T/ObMRKr+9X5CnWkz2oOOg=
+
+Name: res/drawable/btn_zoom_width.xml
+SHA1-Digest: 5UL+DKlF2Iz3u4QHN5m18LmhfUk=
+
+Name: assets/cmap/GBpc-EUC-H
+SHA1-Digest: MoZKYA36AvJNEc935HGv7KA7pS0=
+
+Name: res/drawable-hdpi/recent4.png
+SHA1-Digest: DkC4Am/fMsBf6Et+6wwTkFVt+c8=
+
+Name: assets/cmap/HKdla-B5-H
+SHA1-Digest: O73GJEX8F+2T/8sORh8p9DwmCFE=
+
+Name: assets/cmap/KSCms-UHC-HW-H
+SHA1-Digest: 7k2qlyNIW3wCaZbEo29EOUX+lvQ=
+
+Name: assets/cmap/UniJIS-UCS2-V
+SHA1-Digest: TSNco3tIRlfsIQ+2y97sKVb0SOc=
+
+Name: assets/font/NimbusSanL-Regu.cff
+SHA1-Digest: emLUGjiZBcV9t2nQMyxDJVVSGho=
+
+Name: res/drawable/recent4.png
+SHA1-Digest: Lag6U19aabW5fZW8FhUF//vP4n8=
+
+Name: assets/cmap/Hojo-EUC-V
+SHA1-Digest: 3RJP/JEAU0+/UCuXWPjCnCK0z4M=
+
+Name: res/drawable-mdpi/recent3.png
+SHA1-Digest: XAv0p8Nj3c/Fc2MxbhnzkgGTcBo=
+
+Name: assets/cmap/KSC-V
+SHA1-Digest: +UCdH1Xvlyu5kggv5rVoBcY1Ljo=
+
+Name: assets/font/NimbusRomNo9L-Medi.cff
+SHA1-Digest: jN6u78RF4ZqjqP1OlzwWLzCz2xM=
+
+Name: assets/cmap/KSCpc-EUC-V
+SHA1-Digest: Igo36ZIGv1AYgYNc4D8qevrQGBg=
+
+Name: res/drawable/recent3.png
+SHA1-Digest: nRdRgRId9I5gYFYwDIioENn7rSY=
+
+Name: res/drawable-mdpi/folder.png
+SHA1-Digest: dnLJNPG5lR4dJKkau6ITrGmo5/E=
+
+Name: assets/cmap/HKdla-B5-V
+SHA1-Digest: iOOIHLX94SURhmB0D5ZZVVhF2ok=
+
+Name: assets/cmap/83pv-RKSJ-H
+SHA1-Digest: 1RYgpNfZrso6HL5e8gFRP5jWX5g=
+
+Name: assets/cmap/CNS-EUC-H
+SHA1-Digest: /lzpBYLRjIt+RKpDrphC/avpG4o=
+
+Name: res/drawable/red_btn_zoom_up_selected.9.png
+SHA1-Digest: PkcZi5HLOO7zjpdVhbE9wUBJ80w=
+
+Name: res/drawable-hdpi/red_btn_zoom_down_normal.9.png
+SHA1-Digest: AKik8y6uK0xIp15F+Y8b3XkH8RQ=
+
+Name: lib/armeabi/libapv.so
+SHA1-Digest: I1CCMxl/+4EGb0upiEjDgzmzUKc=
+
+Name: assets/cmap/UniJIS-UCS2-H
+SHA1-Digest: 9BjR8mOOdUgYIeH35quoA4ah0GU=
+
+Name: res/drawable-hdpi/green_btn_zoom_width_normal.png
+SHA1-Digest: imSJPwxZCQwnwFHdFfcDvMsQxsw=
+
+Name: res/layout/about.xml
+SHA1-Digest: Zhvp7hXKSP8jhPsHvpynUsVE/qM=
+
+Name: assets/cmap/KSCpc-EUC-H
+SHA1-Digest: ctpv1rrQfGd43fECTlxHelY1M5A=
+
+Name: assets/cmap/Hiragana
+SHA1-Digest: fHJK2x6IC5h/PHMXY69wow4+OHo=
+
+Name: assets/cmap/GBK2K-V
+SHA1-Digest: LXblxPNnJNhMRNDAZ2i3nU1ceTM=
+
+Name: assets/cmap/KSC-H
+SHA1-Digest: ncOP6MNtHB3m+RIYwKABXwacy6U=
+
+Name: assets/cmap/KSCms-UHC-H
+SHA1-Digest: RTAlfPLs8VXR+eYPWF/FzGqiBFI=
+
+Name: assets/cmap/Adobe-Japan1-1
+SHA1-Digest: dF0KHxTwVQXr64wtAV0vziQVfK4=
+
+Name: assets/cmap/Adobe-Japan1-0
+SHA1-Digest: otGm2zb+g8YxZGYoaWdjZFN9+90=
+
+Name: res/drawable/plus.png
+SHA1-Digest: YNptz6Ukth8irB7oKFMhAkjw1hc=
+
+Name: assets/cmap/78ms-RKSJ-V
+SHA1-Digest: THHi2+DmCxyM2RqFr+KlbsEEmwo=
+
+Name: res/drawable/ic_menu_agenda.png
+SHA1-Digest: 19m0jtU3fszhmkCUFYpTc8Zs3Ok=
+
+Name: assets/cmap/GBK2K-H
+SHA1-Digest: i09VW31ZMnr/w6zjRvZeOVhlrKw=
+
+Name: assets/cmap/Adobe-Japan1-6
+SHA1-Digest: B4gndJS+Pfm7Lrp5buE0Zutgowo=
+
+Name: res/drawable-hdpi/btn_zoom_down_disabled.9.png
+SHA1-Digest: TY5zOjb2qL9+PVGOqX4JGY7ZFpU=
+
+Name: assets/cmap/Adobe-Japan1-5
+SHA1-Digest: flE1nwxSx85YKrtJA3XYBqfCrSM=
+
+Name: assets/cmap/Adobe-Japan2-0
+SHA1-Digest: j0G3RSdEzkdLGPgaSYnLZTNMu88=
+
+Name: assets/cmap/Adobe-Japan1-4
+SHA1-Digest: o5WuAU+KE4sIOM6atdmyJpjRZZY=
+
+Name: assets/cmap/Adobe-Japan1-3
+SHA1-Digest: hKACv5d11mGeILvGtidDIK2+fZY=
+
+Name: assets/cmap/Adobe-Japan1-2
+SHA1-Digest: TEnUWV18kOa8JIBgWd6v1Tl0NCw=
+
+Name: res/anim/page_show_always.xml
+SHA1-Digest: viK/oUy9MfGcB4bUTyqZxiR3NRk=
+
+Name: res/drawable-hdpi/btn_zoom_up_disabled.9.png
+SHA1-Digest: NJyxdrzk4acMTYB2WWJ8A5/RJ3M=
+
+Name: res/drawable/red_btn_zoom_down_disabled_focused.9.png
+SHA1-Digest: tHAuHQ8h+LmDaIHyVwCgV5kDEZc=
+
+Name: res/drawable/green_btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: UH5a2EHxRVG3n2P8dxn4b6j+9v4=
+
+Name: res/anim/zoom.xml
+SHA1-Digest: P57kZ/KzWPTUzrFLh18x+zKb+7M=
+
+Name: assets/cmap/78ms-RKSJ-H
+SHA1-Digest: YvRGWF4ftgGyqW9aAPPYpVYbAoo=
+
+Name: assets/cmap/WP-Symbol
+SHA1-Digest: NQ/Bu7mWoGZehuHHrVNPPBjXayQ=
+
+Name: res/drawable-hdpi/recent1.png
+SHA1-Digest: R9dBehjzUurtVqvqRohRFr8l5K0=
+
+Name: assets/font/NimbusMonL-ReguObli.cff
+SHA1-Digest: 5C5ajaSloolV6ztwOznq7tOr6C0=
+
+Name: res/drawable-hdpi/green_btn_zoom_up_disabled_focused.9.png
+SHA1-Digest: 0LiT+WONwVQw8dKFsT/6ivFqHGY=
+
+Name: assets/cmap/Adobe-GB1-UCS2
+SHA1-Digest: iocTu5Q7wAdzXMhjjH68Tlhlp1c=
+
+Name: assets/cmap/HKdlb-B5-V
+SHA1-Digest: 2N22/aF9/qSRAEvppkgwrV6u6CA=
+
+Name: assets/cmap/GBpc-EUC-V
+SHA1-Digest: oHD06YwhAQungAWUPPSagi1TQEg=
+
+Name: res/drawable-hdpi/red_btn_zoom_width_normal.png
+SHA1-Digest: +bBT4gG8A5n3Fa2gcYe+PLrCncE=
+
+Name: res/drawable/green_red_btn_zoom_up_selected.9.png
+SHA1-Digest: I5U3v1jWeQaHD7SeUqAXXJGIUmA=
+
+Name: res/drawable/red_btn_zoom_up_disabled.9.png
+SHA1-Digest: mO5G8srXtSJ0CuM9nZlggF1vHR8=
+
+Name: res/drawable/red_btn_zoom_up.xml
+SHA1-Digest: 6XFLJPX4USlVRDwfcr6GBOHWZ0I=
+
+Name: assets/cmap/B5pc-H
+SHA1-Digest: Sz8ldVSpYQnmTYYBYXdUEI1j+d8=
+
+Name: assets/cmap/78-V
+SHA1-Digest: uReeR/qX04G4DB/FZ3r0cimF4EY=
+
+Name: assets/cmap/HKgccs-B5-H
+SHA1-Digest: u30Eo2BUoXm7CCqJE42lV7f3QtM=
+
+Name: assets/cmap/HKdlb-B5-H
+SHA1-Digest: kzuAu9h19rYfbXFrgHW/bMoqD1o=
+
+Name: res/drawable-mdpi/recent5.png
+SHA1-Digest: FO33eFbmFQp2fJqNrBjyNb4mlpQ=
+
+Name: assets/cmap/RKSJ-H
+SHA1-Digest: y6TmM7n/3KhPagjMKse9y5YocpQ=
+
+Name: assets/cmap/B5pc-V
+SHA1-Digest: QXEaU+cBTqjze8RgTPJGhYqhCE4=
+
+Name: assets/cmap/78-H
+SHA1-Digest: SI9SsXDHZ2lj6wtDw8pc1PC9/vQ=
+
+Name: res/drawable/red_btn_zoom_down_normal.9.png
+SHA1-Digest: 9nILOmSfoO8RGNFMxa+B2MmXhdA=
+
+Name: assets/cmap/HKgccs-B5-V
+SHA1-Digest: AXXK3WJCdbZ6U/LcZjE0yYuUAb0=
+
+Name: assets/cmap/ETHK-B5-V
+SHA1-Digest: 0+EPEBkb03iQjNm6rVL9q3kHNDo=
+
+Name: assets/cmap/KSC-EUC-V
+SHA1-Digest: veerIXomWDyZ9JaMmjFQjzBci+0=
+

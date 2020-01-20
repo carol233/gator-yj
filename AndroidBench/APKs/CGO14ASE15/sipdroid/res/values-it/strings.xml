@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sipdroid</string>
+    <string name="pstn_name">Telefono</string>
+    <string name="sip_name">Sipdroid, quando disponibile</string>
+    <string name="about">"Sipdroid è un client SIP open-source per Android 
+ 
+Visita http://sipdroid.org per maggiori informazioni 
+ 
+Versione ${VERSION} 
+Il software è stato rilasciato per prova. 
+ 
+Copyright (C) 2009 The Sipdroid Open Source Project (http://sipdroid.org) 
+Copyright (C) 2008 Hughes Systique Corporation, USA (http://hsc.com) 
+Copyright (C) 2006 The Android Open Source Project (http://android.com) 
+Copyright (C) 2005 Luca Veltri - University of Parma - Italy (http://mjsip.org) 
+ 
+Questo è un software gratuito; puoi ridistribuirlo e/o modificarlo sotto i termini della licenza GNU General Public License come pubblicato dalla Free Software Foundation; sia la versione 3 della Licenza, o (a tua scelta) una versione successiva. 
+ 
+Questo programma viene distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; anche senza la garanzia implicita di COMMERCIABILITA' o ADEGUATEZZA AD UN PARTICOLARE SCOPO. Vedi la licenza GNU General Public License per maggiori informazioni (http://www.gnu.org/licenses)."</string>
+    <string name="reg">Registrazione...</string>
+    <string name="regfailed">Registrazione fallita</string>
+    <string name="voicemail">Messaggi in segreteria</string>
+    <string name="auto_enabled">Risposta automatica/Altoparlante</string>
+    <string name="auto_disabled">Risposta automatica disabilitata</string>
+    <string name="hint">Chiamate recenti</string>
+    <string name="empty">"Inserisci l'indirizzo per la chiamata nel formato nome@dominio.com"</string>
+    <string name="notfast">Nessuna rete dati adeguata disponibile</string>
+    <string name="settings_account">Impostazioni account SIP</string>
+    <string name="settings_username">Nome utente</string>
+    <string name="settings_password">Password</string>
+    <string name="settings_server">Server</string>
+    <string name="settings_domain">Dominio</string>
+    <string name="settings_domain2">Lasciare vuoto se è uguale al server</string>
+    <string name="settings_port">Porta</string>
+    <string name="settings_protocol">Protocollo</string>
+    <string name="settings_options">Impostazioni chiamate</string>
+    <string name="settings_wlan">Utilizza WLAN</string>
+    <string name="settings_3g">Utilizza 3G</string>
+    <string name="settings_edge">Utilizza EDGE</string>
+    <string name="settings_check">Controlla se il tuo operatore consente il VoIP</string>
+    <string name="dialog_default">"Sipdroid non è attualmente impostato come telefono predefinito. Vuoi renderlo predefinito? 
+ 
+Se rispondi 'No', puoi ancora chiamare dal sistema tramite Sipdroid aggiungendo '+' dopo un numero nella composizione, o selezionando 'testo a' nei Contatti."</string>
+    <string name="yes">Sì</string>
+    <string name="no">No</string>
+    <string name="dontask">Non richiederlo ancora</string>
+    <string name="settings_pref">Tipo di chiamata preferita</string>
+    <string name="settings_pref2">"Scavalca aggiungendo '+' dopo un numero nella composizione, o selezionando 'testo a' nei Contatti"</string>
+    <string name="settings_compression">Compressione Voce</string>
+    <string name="settings_auto_on">Risposta automatica abilitata</string>
+    <string name="settings_auto_on2">Breve avviso con vibrazione, quando lo schermo è acceso</string>
+    <string name="settings_auto_ondemand">Risposta automatica a richiesta</string>
+    <string name="settings_auto_ondemand2">Visualizza uno switch nella barra di stato</string>
+    <string name="settings_notifications">Notifiche</string>
+    <string name="settings_MWI">Casella vocale</string>
+    <string name="settings_MWI2">Registrati ai messaggi SIP in attesa</string>
+    <string name="settings_notify">Chiamate perse</string>
+    <string name="settings_notify2">Notifica con un LED blu</string>
+    <string name="settings_advanced_options">Impostazioni avanzate</string>
+    <string name="settings_policy_never">Cambia le politiche di attesa per mantenere il Wifi attivo.</string>
+    <string name="settings_policy_default">Reimposta politiche di attesa.</string>
+    <string name="settings_search">Cerca &amp; Sostituisci</string>
+    <string name="settings_excludepat">Valori esclusi</string>
+    <string name="settings_sipringtone">Suoneria SIP</string>
+    <string name="settings_sipringtone2">Imposta la suoneria per le chiamate in arrivo dal SIP</string>
+    <string name="settings_sipringtone_dialog">Suonerie</string>
+    <string name="settings_eargain">Regolazione altoparlante</string>
+    <string name="settings_pbxes_options">Impostazioni PBXes</string>
+    <string name="settings_par">Chiamate simultanee in uscita</string>
+    <string name="settings_par2">Componi tutti i numeri di telefono di una persona contemporaneamente</string>
+    <string name="settings_improve">Meglioramento audio</string>
+    <string name="settings_improve2">"richiede un'account a pagamento"</string>
+    <string name="settings_posurl">URL per Posizione/CallBack</string>
+    <string name="settings_pos">Aggiorna posizione</string>
+    <string name="settings_pos2">Può essere annunciato ai contatti PBXes (richiede account premium)</string>
+    <string name="settings_pos3">Aggiornamento posizione</string>
+    <string name="settings_callback">Trigger CallBack</string>
+    <string name="settings_callback2">Se non è disponibile una rete dati adeguata</string>
+    <string name="settings_callthru">Trigger Callthru</string>
+    <string name="settings_callthru2">Prefisso per Callthru</string>
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_exit">Esci</string>
+    <string name="menu_about">Info</string>
+    <string name="menu_dtmf">Invia DTMF</string>
+    <string name="menu_video">Invia Video</string>
+    <string name="menu_call">Componi</string>
+    <string name="menu_mute">Muto</string>
+    <string name="menu_hold">Pausa</string>
+    <string name="menu_transfer">Trasferisci</string>
+    <string name="menu_speaker">Altoparlante</string>
+    <string name="menu_endCall">Termina chiamata</string>
+    <string name="transfer_title">Trasferimento di chiamata verso</string>
+    <string name="card_title_dialing">Composizione</string>
+    <string name="card_title_in_progress">Chiamata in corso</string>
+    <string name="card_title_incoming_call">Chiamata in arrivo</string>
+    <string name="card_title_call_ended">Chiamata conclusa</string>
+    <string name="card_title_on_hold">In attesa</string>
+    <string name="unknown">Sconosciuto</string>
+    <string name="slide_hint_down_to_end_call">Scorrere in basso per terminare la chiamata.</string>
+    <string name="slide_hint_up_to_answer">Scorri in alto per rispondere.</string>
+    <string name="ongoing">Chiamata attuale</string>
+    <string name="onHold">In attesa</string>
+    <string name="regok">Registrato</string>
+</resources>

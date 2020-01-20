@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">Пронађено је %d резултата</item>
+        <item quantity="one">Пронађен је %d резултат</item>
+        <item quantity="few">Пронађена су %d резултата</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d песама</item>
+        <item quantity="one">1 песма</item>
+        <item quantity="few">%d песме</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d албума</item>
+        <item quantity="one">1 албум</item>
+        <item quantity="few">%d албума</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d потфасцикли</item>
+        <item quantity="one">1 потфасцикла</item>
+        <item quantity="few">%d потфасцикле</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d медијских датотека</item>
+        <item quantity="one">1 медијска датотека</item>
+        <item quantity="few">%d медијске датотеке</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">"%1$d канала
+"</item>
+        <item quantity="one">"1 канал
+"</item>
+        <item quantity="few">"%1$d канала
+"</item>
+    </plurals>
+</resources>
