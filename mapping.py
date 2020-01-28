@@ -45,6 +45,10 @@ def get_jadx_path(IDname, JADXPATH, apkname):
 
 def solve_one(csvfile, apkname, JADXPATH, MAPPATH):
     valid_rows = get_valid_lines(csvfile)
+    if not valid_rows:
+        return
+    if os.path.exists(MAPPATH + "/" + apkname + ".csv"):
+        return
     with open(MAPPATH + "/" + apkname + ".csv", "w", newline="") as fw:
         writer = csv.writer(fw)
         for row in valid_rows:
@@ -70,11 +74,11 @@ def solve_one(csvfile, apkname, JADXPATH, MAPPATH):
 
 
 def mapping(CSVPATH, JADXPATH, MAPPATH):
+    print("[+] MAPPING phase...")
     if not os.path.exists(MAPPATH):
         os.mkdir(MAPPATH)
     csvlist = getFileList(CSVPATH, ".csv")
     for csvfile in csvlist:
-        if "daysmaster" not in csvfile:
-            continue
         apkname = os.path.split(csvfile)[-1][:-4]
+        print("[+] Mapping " + apkname)
         solve_one(csvfile, apkname, JADXPATH, MAPPATH)

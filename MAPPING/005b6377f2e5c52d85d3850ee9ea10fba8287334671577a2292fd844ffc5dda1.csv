@@ -1,0 +1,2 @@
+android.widget.LinearLayout,2131099674,popup_ad,click,<com.brianrileyar.library.Util$1: void onClick(android.view.View)>,#fafafa,
+android.widget.ListView,2131099664,game_youtube_layout_search_results,item_click,"<com.brianrileyar.library.A_YouTubeActivity$YouTubeTask$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>",#fff,
