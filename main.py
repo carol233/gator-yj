@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from common import *
 from parse import *
 from decompile import *
 from mapping import *
+from analyse import *
 
 
 def call_gator(apk):
@@ -31,8 +31,7 @@ def call_gator(apk):
 
 
 if __name__ == '__main__':
-    if not os.path.exists(XMLPATH):
-        os.mkdir(XMLPATH)
+    check_and_mkdir(XMLPATH)
     apklist = getFileList(APKPATH, ".apk")
     args = [(apk) for apk in apklist]
     pool = threadpool.ThreadPool(1)
@@ -41,7 +40,10 @@ if __name__ == '__main__':
     pool.wait()
     print("Extract GUI widgets done.")
 
-    parse_xml()
-    jadx_compile()
-    mapping()
+    parse_xml()  # convert the output files of Gator to csv files
+    jadx_compile()  # decompile apk and get the source code
+    mapping()  # map teh csv lines with pictures/icons
+    extract_libs()  # extract third-party libs from source code
+
+
 

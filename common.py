@@ -5,22 +5,14 @@ import os
 CLIENT = "GUIHierarchyPrinterClient"
 ANDROID_SDK = "~/Library/Android/sdk/"
 JADX_TOOL_PATH = "jadx"
-XMLPATH = "XML"
+
+XMLPATH = "GATOR2XML"
 APKPATH = "APK"
-CSVPATH = "CSV"
-JADXPATH = "JADX"
+CSVPATH = "XML2CSV"
+JADXPATH = "JADXOUTPUT"
 MAPPATH = "MAPPING"
-CODEPATH = "CODE"
-RES = "RES"
-
-THIRD_PARTY_LIB_record = RES + "/third_party_libs.csv"
-fw_lib = open(THIRD_PARTY_LIB_record, "w", newline="")
-writer_lib = csv.writer(fw_lib)
-
-IF_statement = RES + "/if_statement.csv"
-fw_if = open(IF_statement, "w", newline="")
-writer_if = csv.writer(fw_if)
-
+CODEPATH = "FOCUSED_CODE"
+RES = "FINAL_RES"
 
 def getFileList(rootDir, pickstr):
     filePath = []
@@ -30,4 +22,16 @@ def getFileList(rootDir, pickstr):
                 file = os.path.join(parent, filename)
                 filePath.append(file)
     return filePath
+
+
+def check_and_mkdir(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
+check_and_mkdir(RES)
+THIRD_PARTY_LIB_record = RES + "/third_party_libs.csv"
+fw_lib = open(THIRD_PARTY_LIB_record, "w", newline="")
+writer_lib = csv.writer(fw_lib)
+
 

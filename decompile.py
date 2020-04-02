@@ -24,8 +24,7 @@ def compile_one(apk):
 
 def jadx_compile():
     print("[+] Decompiling with JADX...")
-    if not os.path.exists(JADXPATH):
-        os.mkdir(JADXPATH)
+    check_and_mkdir(JADXPATH)
     apk_tmp = getFileList(APKPATH, ".apk")
     csvs = getFileList(CSVPATH, ".csv")
     apks = []

@@ -48,8 +48,7 @@ def parse_onetree(in_file):
 
 
 def parse_xml():
-    if not os.path.exists(CSVPATH):
-        os.mkdir(CSVPATH)
+    check_and_mkdir(CSVPATH)
     xmllist = getFileList(XMLPATH, ".xml")
     print("[+] Parsing " + str(len(xmllist)) + " XML files...")
     args = [(xml) for xml in xmllist]

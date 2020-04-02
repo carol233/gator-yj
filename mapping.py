@@ -78,8 +78,7 @@ def solve_one(csvfile):
 
 def mapping():
     print("[+] Mapping phase...")
-    if not os.path.exists(MAPPATH):
-        os.mkdir(MAPPATH)
+    check_and_mkdir(MAPPATH)
     csvlist = getFileList(CSVPATH, ".csv")
 
     print("[+] Mapping " + str(len(csvlist)) + " files...")

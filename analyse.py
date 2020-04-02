@@ -108,11 +108,8 @@ def solve_one(file):
         #     writer_if.writerow(line)
 
 
-if __name__ == '__main__':
-    if not os.path.exists(CODEPATH):
-        os.mkdir(CODEPATH)
-    if not os.path.exists(RES):
-        os.mkdir(RES)
+def extract_libs():
+    check_and_mkdir(CODEPATH)
     csvfiles = getFileList(CSVPATH, ".csv")
 
     args = [(file) for file in csvfiles]
@@ -122,6 +119,5 @@ if __name__ == '__main__':
     pool.wait()
 
     fw_lib.close()
-    fw_if.close()
 
 
