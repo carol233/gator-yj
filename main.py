@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from parse import *
-from decompile import *
-from mapping import *
-from analyse import *
+from XMLParser import *
+from JADXdecompile import *
+from MappingPICs import *
+from LibExtractor import *
 
 
 def call_gator(apk):
