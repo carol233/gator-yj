@@ -1,6 +1,0 @@
-android.widget.ToggleButton,2131361801,rebootstart_toggle,click,<com.hcea.settings.Blue_Main: void onClick(android.view.View)>,@drawable/toggle_button,JADX/com.hcea.settings/resources/res/drawable/toggle_button.xml
-android.widget.ToggleButton,2131361792,blue_filter_toggle,click,<com.hcea.settings.Blue_Main: void onClick(android.view.View)>,@drawable/toggle_button,JADX/com.hcea.settings/resources/res/drawable/toggle_button.xml
-android.widget.ToggleButton,2131361799,navi_filter_toggle,click,<com.hcea.settings.Blue_Main: void onClick(android.view.View)>,@drawable/toggle_button,JADX/com.hcea.settings/resources/res/drawable/toggle_button.xml
-android.widget.ToggleButton,2131361794,filter_preview_toggle,click,<com.hcea.settings.Blue_Main: void onClick(android.view.View)>,@drawable/toggle_button,JADX/com.hcea.settings/resources/res/drawable/toggle_button.xml
-android.view.MenuItem,2131361807,action_info,item_selected,<com.hcea.settings.Blue_Main: boolean onOptionsItemSelected(android.view.MenuItem)>,@android:drawable/stat_sys_warning,JADX/057be424bd9953e4e247352f21da216fc22ed7d00b1806f11c70779ea6a6b203/resources/res/drawable-hdpi/stat_sys_warning.png
-android.view.MenuItem,2131361808,action_anotherapp,item_selected,<com.hcea.settings.Blue_Main: boolean onOptionsItemSelected(android.view.MenuItem)>,@android:drawable/stat_sys_download,

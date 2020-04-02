@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import subprocess
+import threadpool
 from common import *
 import csv
 import re
@@ -43,7 +44,9 @@ def get_jadx_path(IDname, JADXPATH, apkname):
     return possible_path
 
 
-def solve_one(csvfile, apkname, JADXPATH, MAPPATH):
+def solve_one(csvfile):
+    apkname = os.path.split(csvfile)[-1][:-4]
+    print("[+] Mapping " + apkname)
     valid_rows = get_valid_lines(csvfile)
     if not valid_rows:
         return
@@ -73,12 +76,15 @@ def solve_one(csvfile, apkname, JADXPATH, MAPPATH):
             writer.writerow(tmp)
 
 
-def mapping(CSVPATH, JADXPATH, MAPPATH):
-    print("[+] MAPPING phase...")
+def mapping():
+    print("[+] Mapping phase...")
     if not os.path.exists(MAPPATH):
         os.mkdir(MAPPATH)
     csvlist = getFileList(CSVPATH, ".csv")
-    for csvfile in csvlist:
-        apkname = os.path.split(csvfile)[-1][:-4]
-        print("[+] Mapping " + apkname)
-        solve_one(csvfile, apkname, JADXPATH, MAPPATH)
+
+    print("[+] Mapping " + str(len(csvlist)) + " files...")
+    args = [(csvfile) for csvfile in csvlist]
+    pool = threadpool.ThreadPool(15)
+    requests = threadpool.makeRequests(solve_one, args)
+    [pool.putRequest(req) for req in requests]
+    pool.wait()

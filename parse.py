@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import threadpool
 from common import *
 import xml.etree.ElementTree as ET
 import csv
@@ -13,7 +14,11 @@ def remove_dup(a):
             b.append(item)
     return b
 
-def parse_onetree(in_file, CSVPATH):
+
+def parse_onetree(in_file):
+    csv_path = CSVPATH + "/" + os.path.split(in_file)[-1][:-4] + ".csv"
+    if os.path.exists(csv_path):
+        return
     res = []
     tree = ET.parse(in_file)
     root = tree.getroot()
@@ -35,16 +40,20 @@ def parse_onetree(in_file, CSVPATH):
         res.append(view_record)
     res = remove_dup(res)
 
-    with open(CSVPATH + "/" + os.path.split(in_file)[-1][:-4] + ".csv", 'w', newline="") as f:
+    with open(csv_path, 'w', newline="") as f:
         writer = csv.writer(f)
         writer.writerow(HEADER)
         for item in res:
             writer.writerow(item)
 
 
-def parse_xml(XML, CSVPATH):
+def parse_xml():
     if not os.path.exists(CSVPATH):
         os.mkdir(CSVPATH)
-    xmllist = getFileList(XML, ".xml")
-    for xml in xmllist:
-        parse_onetree(xml, CSVPATH)
+    xmllist = getFileList(XMLPATH, ".xml")
+    print("[+] Parsing " + str(len(xmllist)) + " XML files...")
+    args = [(xml) for xml in xmllist]
+    pool = threadpool.ThreadPool(15)
+    requests = threadpool.makeRequests(parse_onetree, args)
+    [pool.putRequest(req) for req in requests]
+    pool.wait()

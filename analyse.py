@@ -1,14 +1,10 @@
 import csv
+from common import *
 import re
 import subprocess
-
-from common import *
+import threadpool
 
 index = 4
-CSVPATH = "MAPPING"
-CODEPATH = "CODE"
-RES = "RES"
-JADX = "JADX"
 
 
 def get_code(apk_name, activities):
@@ -19,7 +15,7 @@ def get_code(apk_name, activities):
         function = item.split(":")[1].strip()
 
         pathlist = path.split(".")
-        codepath = JADX + "/" + apk_name + "/sources/"
+        codepath = JADXPATH + "/" + apk_name + "/sources/"
         for i in range(len(pathlist)):
             if i != len(pathlist) - 1:
                 codepath += pathlist[i] + "/"
@@ -73,7 +69,7 @@ sources/com/virsir/android/chinamobile10086/news/News.java
 """
 
 
-def solve_one(CODEPATH, file, writer, writerif):
+def solve_one(file):
     apk_name = os.path.split(file)[-1][:-4]
     apk_dir_path = CODEPATH + "/" + apk_name
     if not os.path.exists(apk_dir_path):
@@ -103,12 +99,12 @@ def solve_one(CODEPATH, file, writer, writerif):
         if lib_list:
             line = [apk_name]
             line.extend(lib_list)
-            writer.writerow(line)
+            writer_lib.writerow(line)
 
         if if_statements:
             line = [apk_name]
             line.extend(if_statements)
-            writerif.writerow(line)
+            writer_if.writerow(line)
 
 
 if __name__ == '__main__':
@@ -118,16 +114,13 @@ if __name__ == '__main__':
         os.mkdir(RES)
     csvfiles = getFileList(CSVPATH, ".csv")
 
-    THIRD_PARTY_LIB_record = RES + "/third_party_libs.csv"
-    fw = open(THIRD_PARTY_LIB_record, "w", newline="")
-    writer = csv.writer(fw)
+    args = [(file) for file in csvfiles]
+    pool = threadpool.ThreadPool(15)
+    requests = threadpool.makeRequests(solve_one, args)
+    [pool.putRequest(req) for req in requests]
+    pool.wait()
 
-    IF_statement = RES + "/if_statement.csv"
-    fw1 = open(IF_statement, "w", newline="")
-    writerif = csv.writer(fw1)
-
-    for file in csvfiles:
-        solve_one(CODEPATH, file, writer, writerif)
-    fw.close()
+    fw_lib.close()
+    fw_if.close()
 
 

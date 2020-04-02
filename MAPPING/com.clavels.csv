@@ -1,4 +1,0 @@
-android.widget.FrameLayout,2131099653,bomb,touch,"<com.clavels.KilledInAction$1: boolean onTouch(android.view.View,android.view.MotionEvent)>",@drawable/bomb2,JADX/com.clavels/resources/res/drawable/bomb2.png
-android.widget.FrameLayout,2131099663,flRocketButton,touch,"<com.clavels.PadActivity$3: boolean onTouch(android.view.View,android.view.MotionEvent)>",@drawable/rocket,JADX/com.clavels/resources/res/drawable/rocket.png
-android.widget.FrameLayout,2131099664,flMineButton,touch,"<com.clavels.PadActivity$4: boolean onTouch(android.view.View,android.view.MotionEvent)>",@drawable/mine,JADX/com.clavels/resources/res/drawable/mine.png
-android.widget.FrameLayout,2131099654,flRightButton,touch,"<com.clavels.PadActivity$1: boolean onTouch(android.view.View,android.view.MotionEvent)>",@drawable/ui_dpad,JADX/com.clavels/resources/res/drawable/ui_dpad.png
