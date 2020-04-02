@@ -4,8 +4,6 @@ import re
 import subprocess
 import threadpool
 
-index = 4
-
 
 def get_code(apk_name, activities):
     res = []
@@ -76,35 +74,38 @@ def solve_one(file):
         os.mkdir(apk_dir_path)
     with open(file, "r") as f:
         reader = csv.reader(f)
+        headings = next(reader)
         lib_list = []
-        if_statements = []
+        # if_statements = []
         for line in reader:
             activities = []
             length = len(line)
-            for i in range(index, length - 2):
+            if length - 2 < 4:
+                continue
+            for i in range(4, length - 2):
                 if i % 2 == 0:
                     activities.append(line[i])
-                    res = get_code(apk_name, activities)
-                    for item in res:
-                        try:
-                            lib_list.extend(extract_one(item, apk_name))
-                            if_statements.extend(extract_if(item))
-                            CMD = "cp " + item + " " + CODEPATH + "/" + apk_name + "/"
-                            out_bytes = subprocess.check_output(CMD, shell=True)
-                        except subprocess.CalledProcessError as e:
-                            out_bytes = e.output  # Output generated before error
-                            code = e.returncode  # Return code
+            res = get_code(apk_name, activities)
+            for item in res:
+                try:
+                    lib_list.extend(extract_one(item, apk_name))
+                    # if_statements.extend(extract_if(item))
+                    CMD = "cp " + item + " " + CODEPATH + "/" + apk_name + "/"
+                    out_bytes = subprocess.check_output(CMD, shell=True)
+                except subprocess.CalledProcessError as e:
+                    out_bytes = e.output  # Output generated before error
+                    code = e.returncode  # Return code
         lib_list = list(set(lib_list))
-        if_statements = list(set(if_statements))
+        # if_statements = list(set(if_statements))
         if lib_list:
             line = [apk_name]
             line.extend(lib_list)
             writer_lib.writerow(line)
 
-        if if_statements:
-            line = [apk_name]
-            line.extend(if_statements)
-            writer_if.writerow(line)
+        # if if_statements:
+        #     line = [apk_name]
+        #     line.extend(if_statements)
+        #     writer_if.writerow(line)
 
 
 if __name__ == '__main__':

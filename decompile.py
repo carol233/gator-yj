@@ -10,7 +10,8 @@ def compile_one(apk):
         return
     try:
         print("[+] Decompiling " + apkname)
-        CMD = "~/jadx/build/jadx/bin/jadx -d " + JADXPATH + "/" + apkname + " " + apk
+        # CMD = "~/jadx/build/jadx/bin/jadx -d " + JADXPATH + "/" + apkname + " " + apk
+        CMD = JADX_TOOL_PATH + " -d " + JADXPATH + "/" + apkname + " " + apk
         out_bytes = subprocess.check_output(CMD, shell=True, timeout=40)
     except subprocess.TimeoutExpired as exc:
         print("Command timed out: {}".format(exc))

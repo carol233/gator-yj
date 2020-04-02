@@ -4,6 +4,7 @@ import os
 
 CLIENT = "GUIHierarchyPrinterClient"
 ANDROID_SDK = "~/Library/Android/sdk/"
+JADX_TOOL_PATH = "jadx"
 XMLPATH = "XML"
 APKPATH = "APK"
 CSVPATH = "CSV"
