@@ -42,13 +42,14 @@ class Icon2Code:
                     code_file, funcName = self.get_code_path(apkname, activity)
                     if not code_file or not funcName:
                         continue
-                    try:
-                        answer = self.extract_one(code_file, apkname, funcName)
-                        CMD = "cp " + code_file + " " + CODEPATH + "/" + apkname + "/"
-                        out_bytes = subprocess.check_output(CMD, shell=True)
-                    except subprocess.CalledProcessError as e:
-                        out_bytes = e.output  # Output generated before error
-                        code = e.returncode  # Return code
+                    answer = self.extract_one(code_file, apkname, funcName)
+
+                    # try:
+                    #     CMD = "cp " + code_file + " " + CODEPATH + "/" + apkname + "/"
+                    #     out_bytes = subprocess.check_output(CMD, shell=True)
+                    # except subprocess.CalledProcessError as e:
+                    #     out_bytes = e.output  # Output generated before error
+                    #     code = e.returncode  # Return code
 
                     writer.writerow([feature, answer])
 

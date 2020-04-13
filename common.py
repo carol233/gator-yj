@@ -10,10 +10,7 @@ XMLPATH = "GATOR2XML"
 APKPATH = "APK"
 CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
-MAPPATH = "MAPPING"
-CODEPATH = "FOCUSED_CODE"
 TrainingSet = "TrainingSet"
-RES = "FINAL_RES"
 
 def getFileList(rootDir, pickstr):
     filePath = []
@@ -28,11 +25,4 @@ def getFileList(rootDir, pickstr):
 def check_and_mkdir(path):
     if not os.path.exists(path):
         os.mkdir(path)
-
-
-check_and_mkdir(RES)
-THIRD_PARTY_LIB_record = RES + "/third_party_libs.csv"
-fw_lib = open(THIRD_PARTY_LIB_record, "w", newline="")
-writer_lib = csv.writer(fw_lib)
-
 
