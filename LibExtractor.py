@@ -3,6 +3,7 @@ from common import *
 import re
 import subprocess
 import threadpool
+import javalang
 
 
 def get_code(apk_name, activities):

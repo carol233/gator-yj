@@ -12,6 +12,7 @@ CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
 MAPPATH = "MAPPING"
 CODEPATH = "FOCUSED_CODE"
+TrainingSet = "TrainingSet"
 RES = "FINAL_RES"
 
 def getFileList(rootDir, pickstr):

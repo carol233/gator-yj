@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+import re
+import subprocess
+
 from XMLParser import *
-from JADXdecompile import *
-from MappingPICs import *
-from LibExtractor import *
+from JADXdecompile import JADXdecompile
+# from MappingPICs import *
+# from LibExtractor import *
+from Icon2Code import Icon2Code
 
 
 def call_gator(apk):
@@ -40,10 +44,13 @@ if __name__ == '__main__':
     pool.wait()
     print("Extract GUI widgets done.")
 
-    parse_xml()  # convert the output files of Gator to csv files
-    jadx_compile()  # decompile apk and get the source code
-    mapping()  # map teh csv lines with pictures/icons
-    extract_libs()  # extract third-party libs from source code
+    parse_xml = XMLParser()
+    parse_xml.start()  # convert the output files of Gator to csv files
 
+    jadxdecompile = JADXdecompile()
+    jadxdecompile.start()  # decompile apk and get the source code
+
+    icon2code = Icon2Code()
+    icon2code.start()  # get the training set
 
 
