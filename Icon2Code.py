@@ -133,6 +133,35 @@ class Icon2Code:
 
         return possible_path
 
+    def extract_lib(self, codefile, apk_name):
+        lib = []
+        package_name = ""
+        with open(codefile, "r") as fr:
+            content = fr.read()
+            res_package = re.findall(r'package\s+(\S+);', content)
+            if res_package:
+                package_name = res_package[0]
+            res = re.findall(r'import\s+(\S+);', content)
+            if res:
+                for item in res:
+                    if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name) \
+                            or item.startswith("android.") or item.startswith("java."):
+                        continue
+                    else:
+                        lib.append(item)
+        return lib
+
+    def extract_if(self, codefile):
+        ifs = []
+        with open(codefile, "r") as fr:
+            content = fr.read()
+            # res = re.findall(r'if\s*\(([\w\s!=|&^]*)\)\s*{[^}]*}(\s*else(\s*if\([\w\s!=|&^]*\))*\s*{[^}]*})* ', content)
+            res = re.findall(r'if\s*\(([\w\s!=|&^]*)\)\s*', content)
+            if res:
+                for item in res:
+                    ifs.append(item)
+        return ifs
+
     def start(self):
         check_and_mkdir(TrainingSet)
         csvfiles = getFileList(CSVPATH, ".csv")
