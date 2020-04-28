@@ -4,8 +4,6 @@ import subprocess
 
 from XMLParser import *
 from JADXdecompile import JADXdecompile
-# from MappingPICs import *
-# from LibExtractor import *
 from Icon2Code import Icon2Code
 
 

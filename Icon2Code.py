@@ -17,6 +17,7 @@ class Icon2Code:
             return
         if os.path.exists(TrainingSet + "/" + apkname + ".csv"):
             return
+        jadxfilelist = getFileList(os.path.join(JADXPATH, apkname), "")
         with open(TrainingSet + "/" + apkname + ".csv", "w", newline="") as fw:
             writer = csv.writer(fw)
             for row in valid_rows:
@@ -26,11 +27,15 @@ class Icon2Code:
                 pic_path = self.get_jadx_path(IDname, JADXPATH, apkname)
                 if not pic_path:
                     continue
-                tmp = [row[0], IDname]
-                for pic_str in pic_path:
-                    tmp.append(pic_str)
+                tmp = [row[0], IDname, ";".join(pic_path)]
+                pics = []
+                for item in pic_path:
+                    filename = item.split("/")[-1]
+                    for f in jadxfilelist:
+                        if filename + "." in f:
+                            pics.append(f)
+                tmp.append(";".join(pics))
                 feature = " ".join(tmp)
-
                 activities = []
                 length = len(row)
                 if length - 2 < 3:
@@ -54,10 +59,7 @@ class Icon2Code:
                     writer.writerow([feature, answer])
 
     def extract_one(self, codefile, apkname, funcName):
-        codes = ""
         try:
-            print("[+] Parsing " + apkname)
-            # CMD = ""
             CMD = "java -jar ExtractCode.jar " + codefile + " \"" + funcName + "\""
             out_bytes = subprocess.check_output(CMD, shell=True)
         except subprocess.TimeoutExpired as exc:

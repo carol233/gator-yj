@@ -3,11 +3,14 @@ import csv
 import os
 
 CLIENT = "GUIHierarchyPrinterClient"
-ANDROID_SDK = "~/Library/Android/sdk/"
-JADX_TOOL_PATH = "jadx"
+# ANDROID_SDK = "~/Library/Android/sdk/"
+ANDROID_SDK = "/home/yanjie/android-sdk-linux/"
+# JADX_TOOL_PATH = "jadx"
+JADX_TOOL_PATH = "/home/yanjie/jadx/build/jadx/bin/jadx"
 
 XMLPATH = "GATOR2XML"
-APKPATH = "APK"
+# APKPATH = "APK"
+APKPATH = "/mnt/fit-Knowledgezoo/yanjie/OSS_APK/"
 CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
 TrainingSet = "TrainingSet"
