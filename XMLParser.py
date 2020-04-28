@@ -8,6 +8,7 @@ import csv
 class XMLParser:
     def __init__(self):
         self.HEADER = ["view type", "view id", "view idname", "event and handler"]
+        self.maxjob = 15
 
     def remove_dup(self, a):
         b = []
@@ -52,7 +53,7 @@ class XMLParser:
         xmllist = getFileList(XMLPATH, ".xml")
         print("[+] Parsing " + str(len(xmllist)) + " XML files...")
         args = [(xml) for xml in xmllist]
-        pool = threadpool.ThreadPool(15)
+        pool = threadpool.ThreadPool(self.maxjob)
         requests = threadpool.makeRequests(self.parse_onetree, args)
         [pool.putRequest(req) for req in requests]
         pool.wait()

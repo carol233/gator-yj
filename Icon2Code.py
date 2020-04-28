@@ -3,7 +3,7 @@ import threadpool
 from common import *
 import csv
 import re
-import javalang
+# import javalang
 
 class Icon2Code:
     def __init__(self):

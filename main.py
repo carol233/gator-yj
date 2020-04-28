@@ -36,7 +36,7 @@ if __name__ == '__main__':
     check_and_mkdir(XMLPATH)
     apklist = getFileList(APKPATH, ".apk")
     args = [(apk) for apk in apklist]
-    pool = threadpool.ThreadPool(1)
+    pool = threadpool.ThreadPool(15)
     requests = threadpool.makeRequests(call_gator, args)
     [pool.putRequest(req) for req in requests]
     pool.wait()
