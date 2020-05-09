@@ -18,11 +18,13 @@ class Icon2Code:
         if os.path.exists(TrainingSet + "/" + apkname + ".csv"):
             return
         jadxobject = JADXdecompile()
-        if not jadxobject.compile_one(os.path.join(APKPATH, apkname + ".apk")):
+        sta = jadxobject.compile_one(os.path.join(APKPATH, apkname + ".apk"))
+        if not os.path.exists(os.path.join(JADXPATH, apkname)):
             return
 
         jadxfilelist = getFileList(os.path.join(JADXPATH, apkname), "")
-        with open(TrainingSet + "/" + apkname + ".csv", "w", newline="") as fw:
+        output_trainingset = TrainingSet + "/" + apkname + ".csv"
+        with open(output_trainingset, "w", newline="") as fw:
             writer = csv.writer(fw)
             for row in valid_rows:
                 # 有效行写入新的csv
@@ -75,7 +77,10 @@ class Icon2Code:
                         code = e.returncode  # Return code
 
                     writer.writerow([feature, answer, libs])
+
         shutil.rmtree(os.path.join(JADXPATH, apkname))
+        if not os.path.getsize(output_trainingset):
+            os.remove(output_trainingset)
 
 
     def extract_one(self, codefile, apkname, funcName):

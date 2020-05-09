@@ -16,10 +16,10 @@ class JADXdecompile:
             print("[+] Decompiling " + apkname)
             # CMD = "~/jadx/build/jadx/bin/jadx -d " + JADXPATH + "/" + apkname + " " + apk
             CMD = JADX_TOOL_PATH + " -d " + JADXPATH + "/" + apkname + " " + apk
-            out_bytes = subprocess.check_output(CMD, shell=True, timeout=40)
+            out_bytes = subprocess.check_output(CMD, shell=True, timeout=100)
         except subprocess.TimeoutExpired as exc:
             print("Command timed out: {}".format(exc))
-            return False
+            return True
         except subprocess.CalledProcessError as e:
             out_bytes = e.output  # Output generated before error
             code = e.returncode  # Return code

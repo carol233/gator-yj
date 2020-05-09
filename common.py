@@ -10,7 +10,7 @@ ANDROID_SDK = "/home/yanjie/android-sdk-linux/"
 JADX_TOOL_PATH = "/home/yanjie/jadx/build/jadx/bin/jadx"
 
 XMLPATH = "GATOR2XML"
-APKPATH = "/mnt/fit-Knowledgezoo/yanjie/APK_with_DESC/"
+APKPATH = "/mnt/fit-Knowledgezoo/yanjie/OSS_APK"
 CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
 TrainingSet = "TrainingSet"
