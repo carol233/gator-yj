@@ -3,12 +3,12 @@ import threadpool
 from common import *
 import csv
 import re
+from JADXdecompile import JADXdecompile
+import shutil
 # import javalang
 
-class Icon2Code:
-    def __init__(self):
-        self.maxjob = 15
 
+class Icon2Code:
     def solve_one(self, csvfile):
         apkname = os.path.split(csvfile)[-1][:-4]
         print("[+] Mapping " + apkname)
@@ -17,6 +17,10 @@ class Icon2Code:
             return
         if os.path.exists(TrainingSet + "/" + apkname + ".csv"):
             return
+        jadxobject = JADXdecompile()
+        if not jadxobject.compile_one(apkname + ".apk"):
+            return
+
         jadxfilelist = getFileList(os.path.join(JADXPATH, apkname), "")
         with open(TrainingSet + "/" + apkname + ".csv", "w", newline="") as fw:
             writer = csv.writer(fw)
@@ -34,6 +38,17 @@ class Icon2Code:
                     for f in jadxfilelist:
                         if filename + "." in f:
                             pics.append(f)
+
+                for f in pics:
+                    try:
+                        icon_type = os.path.splitext(f)[-1]  # start with .
+                        new_icon_name = get_md5(f) + icon_type
+                        CMD = "cp " + f + " " + CODE_ICON_PATH + "/" + apkname + "/" + new_icon_name
+                        out_bytes = subprocess.check_output(CMD, shell=True)
+                    except subprocess.CalledProcessError as e:
+                        out_bytes = e.output  # Output generated before error
+                        code = e.returncode  # Return code
+
                 tmp.append(";".join(pics))
                 feature = " ".join(tmp)
                 activities = []
@@ -48,15 +63,20 @@ class Icon2Code:
                     if not code_file or not funcName:
                         continue
                     answer = self.extract_one(code_file, apkname, funcName)
+                    libs = self.extract_lib(code_file, apkname)
 
-                    # try:
-                    #     CMD = "cp " + code_file + " " + CODEPATH + "/" + apkname + "/"
-                    #     out_bytes = subprocess.check_output(CMD, shell=True)
-                    # except subprocess.CalledProcessError as e:
-                    #     out_bytes = e.output  # Output generated before error
-                    #     code = e.returncode  # Return code
+                    try:
+                        file_type = os.path.splitext(code_file)[-1]
+                        new_code_name = get_md5(code_file) + file_type
+                        CMD = "cp " + code_file + " " + CODE_ICON_PATH + "/" + apkname + "/" + new_code_name
+                        out_bytes = subprocess.check_output(CMD, shell=True)
+                    except subprocess.CalledProcessError as e:
+                        out_bytes = e.output  # Output generated before error
+                        code = e.returncode  # Return code
 
-                    writer.writerow([feature, answer])
+                    writer.writerow([feature, answer, libs])
+        shutil.rmtree(os.path.join(JADXPATH, apkname))
+
 
     def extract_one(self, codefile, apkname, funcName):
         try:
@@ -146,8 +166,9 @@ class Icon2Code:
             res = re.findall(r'import\s+(\S+);', content)
             if res:
                 for item in res:
-                    if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name) \
-                            or item.startswith("android.") or item.startswith("java."):
+                    # if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name) \
+                    #         or item.startswith("android.") or item.startswith("java."):
+                    if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name):
                         continue
                     else:
                         lib.append(item)
@@ -165,10 +186,9 @@ class Icon2Code:
         return ifs
 
     def start(self):
-        check_and_mkdir(TrainingSet)
         csvfiles = getFileList(CSVPATH, ".csv")
         args = [(file) for file in csvfiles]
-        pool = threadpool.ThreadPool(self.maxjob)
+        pool = threadpool.ThreadPool(DEFAULT_MAX_JOB)
         requests = threadpool.makeRequests(self.solve_one, args)
         [pool.putRequest(req) for req in requests]
         pool.wait()

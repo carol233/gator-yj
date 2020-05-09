@@ -6,13 +6,10 @@ from common import *
 
 
 class JADXdecompile:
-    def __init__(self):
-        self.maxjob = 15
-
     def compile_one(self, apk):
         apkname = os.path.split(apk)[-1][:-4]
         if os.path.exists(JADXPATH + "/" + apkname):
-            return
+            return True
         try:
             print("[+] Decompiling " + apkname)
             # CMD = "~/jadx/build/jadx/bin/jadx -d " + JADXPATH + "/" + apkname + " " + apk
@@ -20,11 +17,13 @@ class JADXdecompile:
             out_bytes = subprocess.check_output(CMD, shell=True, timeout=40)
         except subprocess.TimeoutExpired as exc:
             print("Command timed out: {}".format(exc))
-            return
+            return False
         except subprocess.CalledProcessError as e:
             out_bytes = e.output  # Output generated before error
             code = e.returncode  # Return code
-        out_text = out_bytes.decode('utf-8')
+            return False
+        # out_text = out_bytes.decode('utf-8')
+        return True
 
     def start(self):
         print("[+] Decompiling with JADX...")
@@ -40,7 +39,7 @@ class JADXdecompile:
         print("[+] Decompiling " + str(len(apks)) + " files...")
 
         args = [(apk) for apk in apks]
-        pool = threadpool.ThreadPool(self.maxjob)
+        pool = threadpool.ThreadPool(DEFAULT_MAX_JOB)
         requests = threadpool.makeRequests(self.compile_one, args)
         [pool.putRequest(req) for req in requests]
         pool.wait()

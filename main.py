@@ -34,6 +34,9 @@ def call_gator(apk):
 
 if __name__ == '__main__':
     check_and_mkdir(XMLPATH)
+    check_and_mkdir(CSVPATH)
+    check_and_mkdir(CODE_ICON_PATH)
+    check_and_mkdir(TrainingSet)
     apklist = getFileList(APKPATH, ".apk")
     args = [(apk) for apk in apklist]
     pool = threadpool.ThreadPool(15)
@@ -45,8 +48,8 @@ if __name__ == '__main__':
     parse_xml = XMLParser()
     parse_xml.start()  # convert the output files of Gator to csv files
 
-    jadxdecompile = JADXdecompile()
-    jadxdecompile.start()  # decompile apk and get the source code
+    # jadxdecompile = JADXdecompile()
+    # jadxdecompile.start()  # decompile apk and get the source code
 
     icon2code = Icon2Code()
     icon2code.start()  # get the training set
