@@ -18,7 +18,7 @@ class Icon2Code:
         if os.path.exists(TrainingSet + "/" + apkname + ".csv"):
             return
         jadxobject = JADXdecompile()
-        if not jadxobject.compile_one(apkname + ".apk"):
+        if not jadxobject.compile_one(os.path.join(APKPATH, apkname + ".apk")):
             return
 
         jadxfilelist = getFileList(os.path.join(JADXPATH, apkname), "")

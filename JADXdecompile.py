@@ -7,6 +7,8 @@ from common import *
 
 class JADXdecompile:
     def compile_one(self, apk):
+        if not os.path.exists(apk):
+            return False
         apkname = os.path.split(apk)[-1][:-4]
         if os.path.exists(JADXPATH + "/" + apkname):
             return True

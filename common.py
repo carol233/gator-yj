@@ -10,12 +10,13 @@ ANDROID_SDK = "/home/yanjie/android-sdk-linux/"
 JADX_TOOL_PATH = "/home/yanjie/jadx/build/jadx/bin/jadx"
 
 XMLPATH = "GATOR2XML"
-APKPATH = "/mnt/fit-Knowledgezoo/yanjie/OSS_APK/"
+APKPATH = "/mnt/fit-Knowledgezoo/yanjie/APK_with_DESC/"
 CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
 TrainingSet = "TrainingSet"
 CODE_ICON_PATH = "ICON_CODE"
 DEFAULT_MAX_JOB = 15
+
 
 def getFileList(rootDir, pickstr):
     filePath = []
