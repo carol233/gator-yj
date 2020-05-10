@@ -9,12 +9,13 @@ class GatorCaller:
     def call_gator(self, apk):
         apk_name = os.path.split(apk)[-1][:-4]
         print("[+] Analysing " + apk_name)
-        if os.path.exists(XMLPATH + "/" + apk_name + ".xml"):
+        new_gator_file = os.path.join(XMLPATH, apk_name + ".xml")
+        if os.path.exists(new_gator_file):
             return
 
         check_file = os.path.join(CHECKDIR, apk_name + ".xml")
         if os.path.exists(check_file):
-            subprocess.call(["cp", check_file, XMLPATH + "/" + apk_name + ".xml"])
+            subprocess.call(["cp", check_file, new_gator_file])
             return
 
         try:
@@ -32,7 +33,7 @@ class GatorCaller:
         if res:
             xml_file = res[0]
             print("XML file: ", xml_file)
-            subprocess.call(["cp", xml_file, XMLPATH + "/" + apk_name + ".xml"])
+            subprocess.call(["cp", xml_file, new_gator_file])
         else:
             print("No XML file!")
 

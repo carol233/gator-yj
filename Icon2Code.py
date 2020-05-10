@@ -12,7 +12,7 @@ class Icon2Code:
     def solve_one(self, csvfile):
         apkname = os.path.split(csvfile)[-1][:-4]
         print("[+] Mapping " + apkname)
-        output_trainingset = TrainingSet + "/" + apkname + ".csv"
+        output_trainingset = os.path.join(TrainingSet, apkname + ".csv")
 
         valid_rows = self.get_valid_lines(csvfile)
         if not valid_rows:
@@ -87,6 +87,7 @@ class Icon2Code:
         shutil.rmtree(os.path.join(JADXPATH, apkname))
         if not os.path.getsize(output_trainingset):
             os.remove(output_trainingset)
+            shutil.rmtree(codepath_apkname)
 
 
     def extract_one(self, codefile, apkname, funcName):
