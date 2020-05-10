@@ -11,6 +11,12 @@ class GatorCaller:
         print("[+] Analysing " + apk_name)
         if os.path.exists(XMLPATH + "/" + apk_name + ".xml"):
             return
+
+        check_file = os.path.join(CHECKDIR, apk_name + ".xml")
+        if os.path.exists(check_file):
+            subprocess.call(["cp", check_file, XMLPATH + "/" + apk_name + ".xml"])
+            return
+
         try:
             CMD = "./gator/gator a --sdk " + ANDROID_SDK + " -p " + apk + " -client " + CLIENT
             out_bytes = subprocess.check_output(CMD, shell=True, timeout=100)

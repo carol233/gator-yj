@@ -12,18 +12,24 @@ class Icon2Code:
     def solve_one(self, csvfile):
         apkname = os.path.split(csvfile)[-1][:-4]
         print("[+] Mapping " + apkname)
+        output_trainingset = TrainingSet + "/" + apkname + ".csv"
+
         valid_rows = self.get_valid_lines(csvfile)
         if not valid_rows:
             return
-        if os.path.exists(TrainingSet + "/" + apkname + ".csv"):
+        if os.path.exists(output_trainingset):
             return
         jadxobject = JADXdecompile()
         sta = jadxobject.compile_one(os.path.join(APKPATH, apkname + ".apk"))
         if not os.path.exists(os.path.join(JADXPATH, apkname)):
+            print("no jadx dir!")
             return
 
+        codepath_apkname = os.path.join(CODE_ICON_PATH, apkname)
+        check_and_mkdir(codepath_apkname)
+
         jadxfilelist = getFileList(os.path.join(JADXPATH, apkname), "")
-        output_trainingset = TrainingSet + "/" + apkname + ".csv"
+
         with open(output_trainingset, "w", newline="") as fw:
             writer = csv.writer(fw)
             for row in valid_rows:
@@ -45,7 +51,7 @@ class Icon2Code:
                     try:
                         icon_type = os.path.splitext(f)[-1]  # start with .
                         new_icon_name = get_md5(f) + icon_type
-                        CMD = "cp " + f + " " + CODE_ICON_PATH + "/" + apkname + "/" + new_icon_name
+                        CMD = "cp " + f + " " + os.path.join(codepath_apkname, new_icon_name)
                         out_bytes = subprocess.check_output(CMD, shell=True)
                     except subprocess.CalledProcessError as e:
                         out_bytes = e.output  # Output generated before error
@@ -70,7 +76,7 @@ class Icon2Code:
                     try:
                         file_type = os.path.splitext(code_file)[-1]
                         new_code_name = get_md5(code_file) + file_type
-                        CMD = "cp " + code_file + " " + CODE_ICON_PATH + "/" + apkname + "/" + new_code_name
+                        CMD = "cp " + code_file + " " + os.path.join(codepath_apkname, new_code_name)
                         out_bytes = subprocess.check_output(CMD, shell=True)
                     except subprocess.CalledProcessError as e:
                         out_bytes = e.output  # Output generated before error

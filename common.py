@@ -16,6 +16,7 @@ JADXPATH = "JADXOUTPUT"
 TrainingSet = "TrainingSet"
 CODE_ICON_PATH = "ICON_CODE"
 DEFAULT_MAX_JOB = 15
+CHECKDIR = "/mnt/fit-Knowledgezoo/yanjie/gator-3.8/GATOR2XML"
 
 
 def getFileList(rootDir, pickstr):
@@ -35,5 +36,5 @@ def check_and_mkdir(path):
 
 def get_md5(s):
     m = hashlib.md5()
-    m.update(s)
+    m.update(s.encode("utf-8"))
     return m.hexdigest()
