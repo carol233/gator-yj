@@ -36,16 +36,22 @@ class Icon2Code:
                 # 有效行写入新的csv
                 ID = row[1]
                 IDname = row[2]
+
                 pic_path = self.get_jadx_path(IDname, JADXPATH, apkname)
                 if not pic_path:
                     continue
+
                 tmp = [row[0], IDname, ";".join(pic_path)]
                 pics = []
                 for item in pic_path:
-                    filename = item.split("/")[-1]
+                    subpaths = item.strip("@").split("/")
+                    folder = subpaths[0]
+                    filename = subpaths[1]
                     for f in jadxfilelist:
-                        if filename + "." in f:
+                        if filename + "." in f and folder in f:
                             pics.append(f)
+                if not pics:
+                    continue
 
                 for f in pics:
                     try:
@@ -59,10 +65,12 @@ class Icon2Code:
 
                 tmp.append(";".join(pics))
                 feature = " ".join(tmp)
+
                 activities = []
                 length = len(row)
                 if length - 2 < 3:
                     continue
+
                 for i in range(4, length):
                     if i % 2 == 0:
                         activities.append(row[i])
@@ -70,7 +78,7 @@ class Icon2Code:
                     code_file, funcName = self.get_code_path(apkname, activity)
                     if not code_file or not funcName:
                         continue
-                    answer = self.extract_one(code_file, apkname, funcName)
+                    code_body = self.extract_one(code_file, apkname, funcName)
                     libs = self.extract_lib(code_file, apkname)
 
                     try:
@@ -82,7 +90,7 @@ class Icon2Code:
                         out_bytes = e.output  # Output generated before error
                         code = e.returncode  # Return code
 
-                    writer.writerow([feature, answer, libs])
+                    writer.writerow([feature, activity, code_body, libs])
 
         shutil.rmtree(os.path.join(JADXPATH, apkname))
         if not os.path.getsize(output_trainingset):
@@ -178,9 +186,9 @@ class Icon2Code:
             res = re.findall(r'import\s+(\S+);', content)
             if res:
                 for item in res:
-                    # if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name) \
-                    #         or item.startswith("android.") or item.startswith("java."):
-                    if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name):
+                    if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name) \
+                            or item.startswith("android") or item.startswith("java."):
+                    # if (package_name != "" and item.startswith(package_name)) or item.startswith(apk_name):
                         continue
                     else:
                         lib.append(item)

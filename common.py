@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+import sys
 import csv
+csv.field_size_limit(sys.maxsize)
 import os
 import hashlib
 
@@ -9,8 +11,9 @@ ANDROID_SDK = "/home/yanjie/android-sdk-linux/"
 # JADX_TOOL_PATH = "jadx"
 JADX_TOOL_PATH = "/home/yanjie/jadx/build/jadx/bin/jadx"
 
-XMLPATH = "GATOR2XML"
-APKPATH = "/mnt/fit-Knowledgezoo/yanjie/OSS_APK"
+# XMLPATH = "GATOR2XML"
+XMLPATH = "/mnt/fit-Knowledgezoo/yanjie/gator-3.8/GATOR2XML"
+APKPATH = "/mnt/fit-Knowledgezoo/yanjie/APK_with_DESC"
 CSVPATH = "XML2CSV"
 JADXPATH = "JADXOUTPUT"
 TrainingSet = "TrainingSet"
