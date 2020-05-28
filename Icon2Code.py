@@ -79,25 +79,26 @@ class Icon2Code:
                     else:
                         events.append(row[i])
 
-                for i in range(len(handlers)):
-                    handler = handlers[i]
-                    event = events[i]
-                    code_file, funcName = self.get_code_path(apkname, handler)
-                    if not code_file or not funcName:
-                        continue
-                    code_body = self.extract_one(code_file, apkname, funcName)
-                    libs = self.extract_lib(code_file, apkname)
+                # for i in range(len(handlers)):
+                #     handler = handlers[i]
+                #     event = events[i]
+                #     code_file, funcName = self.get_code_path(apkname, handler)
+                #     if not code_file or not funcName:
+                #         continue
+                #     code_body = self.extract_one(code_file, apkname, funcName)
+                #     libs = self.extract_lib(code_file, apkname)
+                #
+                #     try:
+                #         file_type = os.path.splitext(code_file)[-1]
+                #         new_code_name = get_md5(code_file) + file_type
+                #         CMD = "cp " + code_file + " " + os.path.join(codepath_apkname, new_code_name)
+                #         out_bytes = subprocess.check_output(CMD, shell=True)
+                #     except subprocess.CalledProcessError as e:
+                #         out_bytes = e.output  # Output generated before error
+                #         code = e.returncode  # Return code
 
-                    try:
-                        file_type = os.path.splitext(code_file)[-1]
-                        new_code_name = get_md5(code_file) + file_type
-                        CMD = "cp " + code_file + " " + os.path.join(codepath_apkname, new_code_name)
-                        out_bytes = subprocess.check_output(CMD, shell=True)
-                    except subprocess.CalledProcessError as e:
-                        out_bytes = e.output  # Output generated before error
-                        code = e.returncode  # Return code
-
-                    writer.writerow([PIC_NAME, IDname, ICON_TYPE, TEXT_Of_ICON, apkname, event, handler, PIC_TRUE_PATH, code_body, libs])
+                writer.writerow([PIC_NAME, IDname, ICON_TYPE, TEXT_Of_ICON,
+                                 apkname, ";".join(events), ";".join(handlers), PIC_TRUE_PATH])
 
         shutil.rmtree(os.path.join(JADXPATH, apkname))
         if not os.path.getsize(output_trainingset):
