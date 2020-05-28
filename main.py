@@ -12,7 +12,6 @@ class GatorCaller:
         new_gator_file = os.path.join(XMLPATH, apk_name + ".xml")
         if os.path.exists(new_gator_file):
             return
-
         check_file = os.path.join(CHECKDIR, apk_name + ".xml")
         if os.path.exists(check_file):
             subprocess.call(["cp", check_file, new_gator_file])
@@ -20,7 +19,7 @@ class GatorCaller:
 
         try:
             CMD = "./gator/gator a --sdk " + ANDROID_SDK + " -p " + apk + " -client " + CLIENT
-            out_bytes = subprocess.check_output(CMD, shell=True, timeout=120)
+            out_bytes = subprocess.check_output(CMD, shell=True, timeout=100)
         except subprocess.TimeoutExpired as exc:
             print("Command timed out: {}".format(exc))
             return
@@ -53,13 +52,13 @@ if __name__ == '__main__':
     check_and_mkdir(CODE_ICON_PATH)
     check_and_mkdir(TrainingSet)
 
-    # gatorCaller = GatorCaller()
-    # gatorCaller.start()
+    gatorCaller = GatorCaller()
+    gatorCaller.start()
 
     parse_xml = XMLParser()
     parse_xml.start()  # convert the output files of Gator to csv files
 
-    icon2code = Icon2Code()
-    icon2code.start()  # get the training set
+    # icon2code = Icon2Code()
+    # icon2code.start()  # get the training set
 
 

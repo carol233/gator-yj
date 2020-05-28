@@ -37,16 +37,17 @@ class Icon2Code:
                 ID = row[1]
                 IDname = row[2]
 
-                pic_path = self.get_jadx_path(IDname, JADXPATH, apkname)
+                pic_path, text_of_icon = self.get_icon_text(IDname, JADXPATH, apkname)
                 if not pic_path:
                     continue
 
-                tmp = [row[0], IDname, ";".join(pic_path)]
+                PIC_NAME = ";".join(pic_path)
+                ICON_TYPE = row[0]
                 pics = []
                 for item in pic_path:
                     subpaths = item.strip("@").split("/")
                     folder = subpaths[0]
-                    filename = subpaths[1]
+                    filename = subpaths[-1]
                     for f in jadxfilelist:
                         if filename + "." in f and folder in f:
                             pics.append(f)
@@ -63,19 +64,25 @@ class Icon2Code:
                         out_bytes = e.output  # Output generated before error
                         code = e.returncode  # Return code
 
-                tmp.append(";".join(pics))
-                feature = " ".join(tmp)
+                PIC_TRUE_PATH = ";".join(pics)
+                TEXT_Of_ICON = text_of_icon
 
-                activities = []
+                handlers = []
+                events = []
                 length = len(row)
                 if length - 2 < 3:
                     continue
 
-                for i in range(4, length):
+                for i in range(3, length):
                     if i % 2 == 0:
-                        activities.append(row[i])
-                for activity in activities:
-                    code_file, funcName = self.get_code_path(apkname, activity)
+                        handlers.append(row[i])
+                    else:
+                        events.append(row[i])
+
+                for i in range(len(handlers)):
+                    handler = handlers[i]
+                    event = events[i]
+                    code_file, funcName = self.get_code_path(apkname, handler)
                     if not code_file or not funcName:
                         continue
                     code_body = self.extract_one(code_file, apkname, funcName)
@@ -90,7 +97,7 @@ class Icon2Code:
                         out_bytes = e.output  # Output generated before error
                         code = e.returncode  # Return code
 
-                    writer.writerow([feature, activity, code_body, libs])
+                    writer.writerow([PIC_NAME, IDname, ICON_TYPE, TEXT_Of_ICON, apkname, event, handler, PIC_TRUE_PATH, code_body, libs])
 
         shutil.rmtree(os.path.join(JADXPATH, apkname))
         if not os.path.getsize(output_trainingset):
@@ -149,7 +156,7 @@ class Icon2Code:
                 res.append(row)
         return res
 
-    def get_jadx_path(self, IDname, JADXPATH, apkname):
+    def get_icon_text(self, IDname, JADXPATH, apkname):
         try:
             CMD = "grep -r id/" + IDname + " " + JADXPATH + "/" + apkname
             out_bytes = subprocess.check_output(CMD, shell=True)
@@ -160,20 +167,33 @@ class Icon2Code:
         """
         android:src="@drawable/xxx"
         android:background="@drawable/xxx" # sometimes is just color
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        "Detecting Behaviour Anomalies in Graphical User Interfaces"
         """
         possible_path = []
+        contentDescription = ""
         res = re.findall(r'android:src="(\S+)"', out_text)
         if res: possible_path.append(res[0])
         res = re.findall(r'android:background="(\S+)"', out_text)
         if res: possible_path.append(res[0])
-        res = re.findall(r'android:icon="(\S+)"', out_text)
+        res = re.findall(r'android:drawableRight="(\S+)"', out_text)
         if res: possible_path.append(res[0])
-        res = re.findall(r'android:roundIcon="(\S+)"', out_text)
+        res = re.findall(r'android:drawableTop="(\S+)"', out_text)
+        if res: possible_path.append(res[0])
+        res = re.findall(r'android:drawableLeft="(\S+)"', out_text)
+        if res: possible_path.append(res[0])
+        res = re.findall(r'android:drawableBottom="(\S+)"', out_text)
+        if res: possible_path.append(res[0])
+        res = re.findall(r'android:drawableEnd="(\S+)"', out_text)
+        if res: possible_path.append(res[0])
+        res = re.findall(r'android:drawableStart="(\S+)"', out_text)
         if res: possible_path.append(res[0])
 
-        return possible_path
+        res = re.findall(r'android:contentDescription="(\S+)"', out_text)
+        if res:
+            contentDescription = res[0]
+
+
+        return possible_path, contentDescription
 
     def extract_lib(self, codefile, apk_name):
         lib = []
