@@ -105,7 +105,6 @@ class Icon2Code:
             os.remove(output_trainingset)
             shutil.rmtree(codepath_apkname)
 
-
     def extract_one(self, codefile, apkname, funcName):
         try:
             CMD = "java -jar ExtractCode.jar " + codefile + " \"" + funcName + "\""
@@ -173,26 +172,33 @@ class Icon2Code:
         possible_path = []
         contentDescription = ""
         res = re.findall(r'android:src="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:background="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableRight="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableTop="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableLeft="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableBottom="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableEnd="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
         res = re.findall(r'android:drawableStart="(\S+)"', out_text)
-        if res: possible_path.append(res[0])
+        if res:
+            possible_path.append(res[0])
 
         res = re.findall(r'android:contentDescription="(\S+)"', out_text)
         if res:
             contentDescription = res[0]
-
 
         return possible_path, contentDescription
 

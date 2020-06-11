@@ -52,13 +52,13 @@ if __name__ == '__main__':
     check_and_mkdir(CODE_ICON_PATH)
     check_and_mkdir(TrainingSet)
 
-    gatorCaller = GatorCaller()
-    gatorCaller.start()
+    # gatorCaller = GatorCaller()
+    # gatorCaller.start()
 
     parse_xml = XMLParser()
     parse_xml.start()  # convert the output files of Gator to csv files
 
-    # icon2code = Icon2Code()
-    # icon2code.start()  # get the training set
+    icon2code = Icon2Code()
+    icon2code.start()  # get the training set
 
 

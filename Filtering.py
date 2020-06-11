@@ -12,25 +12,16 @@ class Filtering:
             reader = csv.reader(fr)
             new_lines = []
             for line in reader:
-                feature = line[0].strip()
-                code = line[1].strip()
-                libs = line[2].strip('\"[]')
-
-                if not "JADXOUTPUT/" in feature:
-                    continue
-                if code == "":
-                    continue
-                if not libs:
-                    continue
-                lib = libs.split(",")
+                PIC_TRUE_PATH = line[-1]
                 flag = 0
-                for item in lib:
-                    item = item.strip("\'")
-                    if item.startswith("android") or item.startswith("java"):
-                        flag = 0
-                    else:
+
+                if not "JADXOUTPUT/" in PIC_TRUE_PATH:
+                    continue
+
+                lst = [".png", ".jpg"]
+                for item in lst:
+                    if item in PIC_TRUE_PATH:
                         flag = 1
-                        break
                 if flag == 1:
                     new_lines.append(line)
 
@@ -39,7 +30,7 @@ class Filtering:
 
         new_lines = [list(t) for t in set(tuple(_) for _ in new_lines)]
 
-        with open(os.path.join(New_dir, filename), "w") as fw:
+        with open(os.path.join(New_dir, filename), "w", newline="") as fw:
             writer = csv.writer(fw)
             for line in new_lines:
                 writer.writerow(line)
