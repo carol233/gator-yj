@@ -13,24 +13,30 @@ class Filtering:
             new_lines = []
             for line in reader:
                 PIC_TRUE_PATH = line[-1]
-                flag = 0
-
                 if not "JADXOUTPUT/" in PIC_TRUE_PATH:
                     continue
 
-                lst = [".png", ".jpg"]
-                for item in lst:
-                    if item in PIC_TRUE_PATH:
+                pics = PIC_TRUE_PATH.split(";")
+                new_pics = []
+                flag = 0
+                for pic in pics:
+                    if ".xml" in pic:
+                        continue
+                    elif (".png" in pic) or (".jpg" in pic):
                         flag = 1
+                        new_pics.append(pic)
+
+                newline = line[:-1]
+                newline.append(";".join(new_pics))
                 if flag == 1:
-                    new_lines.append(line)
+                    new_lines.append(newline)
 
         if not new_lines:
             return
 
         new_lines = [list(t) for t in set(tuple(_) for _ in new_lines)]
 
-        with open(os.path.join(New_dir, filename), "w", newline="") as fw:
+        with open(os.path.join(New_dir, filename + ".csv"), "w", newline="") as fw:
             writer = csv.writer(fw)
             for line in new_lines:
                 writer.writerow(line)
@@ -49,7 +55,3 @@ if __name__ == "__main__":
     check_and_mkdir(New_dir)
     filter = Filtering()
     filter.start()
-
-
-
-
